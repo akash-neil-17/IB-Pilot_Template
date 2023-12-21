@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/all.min.css">
 </head>
 <body>
-    <div class="container" style="background-color: rgb(60, 64, 60); max-height: 100vh; border:1px solid black;">
+    <div class="container" style="background-color: rgb(60, 64, 60); min-height: 60vh; border:1px solid black; font-size: small;">
         <div class="container-fluid" style="background-color: rgb(178, 234, 244); border:1px solid black;">
             <div class="row">
                 <div class="col-3">
@@ -60,22 +60,76 @@
                 </div>
                 <!-- Animation -->
                 <div class="row">
-                    <p>Welcome User</p>
+                    <!-- <p>Welcome User</p> -->
+                    <marquee behavior="scroll" direction="left">Welcome User</marquee>
                 </div>
                 <div class="row">
                     <!-- Sidebar -->
-                    <div class="col-md-12 col-3">
-
+                    <div class="col-lg-3 col-md-12 col-sm-12 mt-2">
+                        <div class="card">
+                            <div class="card-header">
+                                My Accounts
+                            </div>
+                            <div class="card-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                                        Bank Account
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">Loan/Finance</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Term Deposit</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Tag Account</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Untag Account</a>
+                                </div>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
                     </div>
                     <!-- Dashboard -->
-                    <div class="col-md-12 col-9">
-
+                    <div class="col-lg-9 col-md-12 col-sm-12 mt-2">
+                        <div class="accordion accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Conventional Linked Accounts
+                                </button>
+                            </h2>
+                            <div class="accordion accordion-item mt-2" id="collapseTwo">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Accounts
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Account Number</th>
+                                                    <th scope="col">Account Type</th>
+                                                    <th scope="col">Available Balance</th>
+                                                    <th scope="col">Ledger Balance</th>
+                                                    <th scope="col">Currency</th>
+                                                    <th scope="col">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Footer -->
-        <div class="row" style="color: white;">
+        <div class="row text-center" style="color: white;">
             <footer>
                 <p>Footer Here</p>
             </footer>
