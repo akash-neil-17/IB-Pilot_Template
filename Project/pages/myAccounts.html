@@ -8,34 +8,41 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../css/all.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/Citi-Logo-White.png" type="image/x-icon">
 </head>
 <body>
-    <div class="container" style="background-color: rgb(60, 64, 60); min-height: 60vh; border:1px solid black; font-size: small;">
-        <div class="container-fluid" style="background-color: rgb(178, 234, 244); border:1px solid black;">
+    <div class="container shadow p-3 mb-5 bg-body-tertiary rounded" style="background-color: white; min-height: 60vh; font-size: small;">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-3">
-                    <img src="#" alt="Logo">
+                    <img src="../img/main_logo.jpg" class="img-fluid" alt="Logo" style="width: 100%; height: 18vh;">
                 </div>
-                <div class="col-9">
-                    <img src="#" alt="Background picture">
+                <div class="col-9" style="background-image: url(../img/digital-banking.jpg);height: 18vh;">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                    </nav>
                 </div>
             </div>
             <!-- Navigation Bar -->
-            <div class="row" style="border:1px solid black;">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary" style="font-size: medium;">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#">My Accounts</a>
-                            <a class="nav-link" href="#">Favorites</a>
+                        <div class="navbar-nav m-auto">
+                            <a class="nav-link active" aria-current="page" href="myAccounts.html">My Accounts</a>
+                            <a class="nav-link" href="favorites.html">Favorites</a>
                             <a class="nav-link" href="#">Beneficiary</a>
-                            <a class="nav-link" href="#">Fund Transfer</a>
+                            <a class="nav-link" href="fundTransfer.html">Fund Transfer</a>
                             <a class="nav-link" href="#">Mobile Recharge</a>
                             <a class="nav-link" href="#">Utility Bill</a>
                             <a class="nav-link" href="#">Payments</a>
-                            <a class="nav-link" href="#">Account Services</a>
+                            <a class="nav-link" href="accountServices.html">Account Services</a>
                             <a class="nav-link" href="#">Card Services</a>
                             <a class="nav-link" href="#">Loan/Finance Services</a>
                             <a class="nav-link" href="#">Settings</a>
@@ -43,11 +50,11 @@
                     </div>
                 </nav>
             </div>
-            
+            <hr>
             <!-- Section -->
-            <div class="container-fluid" style="border:1px solid black;">
+            <div class="container-fluid bg-body-tertiary rounded">
                 <!-- Greeting User and Login Time display -->
-                <div class="row" style="border:1px solid black;">
+                <div class="row">
                     <!-- Greeting User -->
                     <div class="col-3">
                         <p>Welcome, User</p>
@@ -61,12 +68,12 @@
                 <!-- Animation -->
                 <div class="row">
                     <!-- <p>Welcome User</p> -->
-                    <marquee behavior="scroll" direction="left">Welcome User</marquee>
+                    <marquee behavior="scroll" direction="left" style="background-color: rgb(175, 210, 241); border-radius: 5px; border: 2px solid black;"><strong>Welcome User</strong></marquee>
                 </div>
                 <div class="row">
                     <!-- Sidebar -->
                     <div class="col-lg-3 col-md-12 col-sm-12 mt-2">
-                        <div class="card">
+                        <div class="card shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="border: none;">
                             <div class="card-header">
                                 My Accounts
                             </div>
@@ -81,25 +88,24 @@
                                     <a href="#" class="list-group-item list-group-item-action">Untag Account</a>
                                 </div>
                             </div>
-                            <div class="card-footer"></div>
                         </div>
                     </div>
                     <!-- Dashboard -->
                     <div class="col-lg-9 col-md-12 col-sm-12 mt-2">
-                        <div class="accordion accordion-item">
+                        <div class="accordion accordion-item shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="border: none;">
                             <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     Conventional Linked Accounts
                                 </button>
                             </h2>
-                            <div class="accordion accordion-item mt-2" id="collapseTwo">
+                            <div class="accordion accordion-item mt-2" id="collapseTwo" style="border: none;">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                         Accounts
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body table-responsive">
                                         <table class="table table-hover">
                                             <thead>
                                                 <tr>
@@ -114,9 +120,11 @@
                                             <tbody>
                                                 <tr>
                                                     <td scope="row">1</td>
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
+                                                    <td>Akash Chakraborty</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                    <td>BDT</td>
+                                                    <td>Active</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -128,10 +136,11 @@
                 </div>
             </div>
         </div>
+        <hr>
         <!-- Footer -->
-        <div class="row text-center" style="color: white;">
+        <div class="row text-center" style="color: black;">
             <footer>
-                <p>Footer Here</p>
+                <p>&copy; Sonali Intellect Limited</p>
             </footer>
         </div>
     </div>
