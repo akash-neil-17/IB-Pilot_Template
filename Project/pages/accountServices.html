@@ -76,24 +76,29 @@
                 <!-- Animation -->
                 <div class="row">
                     <!-- <p>Welcome User</p> -->
-                    <marquee behavior="scroll" direction="left" style="background-color: #CFE2FF; border-radius: 5px; border: 1px solid black;"><strong>Welcome User</strong></marquee>
+                    <marquee behavior="scroll" direction="left" style="background-color: #CFE2FF; border-radius: 5px;"><strong>Welcome User</strong></marquee>
                 </div>
                 <div class="row">
                     <!-- Sidebar -->
                     <div class="col-lg-3 col-md-12 col-sm-12 mt-2">
                         <div class="card shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="border: none;">
                             <div class="card-header">
-                                My Accounts
+                                Account Services
                             </div>
                             <div class="card-body">
                                 <div class="list-group">
                                     <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                                        Bank Account
+                                        Account Statement
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action">Loan/Finance</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Term Deposit</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Tag Account</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Untag Account</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Activity Report</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Cheque Book Request</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Cheque Stop Request</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Fixed Deposit</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Monthly DPS</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Pay Order</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Positive Pay</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Proof of Tax Return Submission</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Tax Certificate Download</a>
                                 </div>
                             </div>
                         </div>
@@ -103,41 +108,75 @@
                         <div class="accordion accordion-item shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="border: none;">
                             <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Conventional Linked Accounts
+                                    Account Statement
                                 </button>
                             </h2>
-                            <div class="accordion accordion-item mt-2" id="collapseTwo" style="border: none;">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Accounts
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body table-responsive">
-                                        <table class="table table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">Account Number</th>
-                                                    <th scope="col">Account Type</th>
-                                                    <th scope="col">Available Balance</th>
-                                                    <th scope="col">Ledger Balance</th>
-                                                    <th scope="col">Currency</th>
-                                                    <th scope="col">Status</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td scope="row">1</td>
-                                                    <td>Akash Chakraborty</td>
-                                                    <td>0.00</td>
-                                                    <td>0.00</td>
-                                                    <td>BDT</td>
-                                                    <td>Active</td>                                                    
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                            <div class="accordion accordion-item mt-2 accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseTwo" style="border: none;" >
+                                <div class="accordion-body">
+                                    <form>
+                                        <div class="row mb-3">
+                                            <label for="accountNumber" class="col-md-3 col-form-label">Statement for Account Number<span style="color: red;"> *</span></label>
+                                            <div class="col-md-9">
+                                                <select class="form-select form-select-sm" id="accountNumber" required>
+                                                    <option selected>Select Account</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                    <option value="3">Option 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="statementFromDate" class="col-md-3 col-form-label">Statement From Date</label>
+                                            <div class="col-md-9">
+                                              <input type="date" class="form-control form-control-sm" id="statementFromDate">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="statementTillDate" class="col-md-3 col-form-label">Statement Till Date</label>
+                                            <div class="col-md-9">
+                                              <input type="date" class="form-control form-control-sm" id="statementTillDate">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="monthlyStatement" class="col-md-3 col-form-label">Monthly Statement (Up to last 6 months)</label>
+                                            <div class="col-md-9">
+                                                <select class="form-select form-select-sm" id="monthlyStatement" required>
+                                                    <option selected>Select Month</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                    <option value="3">Option 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <fieldset class="row mb-3">
+                                            <legend class="col-form-label col-md-3 pt-0">Statement Format<span style="color: red;"> *</span></legend>
+                                            <div class="col-md-9">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                    <label class="form-check-label" for="gridRadios1">
+                                                    Display On Screen
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                    <label class="form-check-label" for="gridRadios2">
+                                                    Save as PDF Format
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                                    <label class="form-check-label" for="gridRadios3">
+                                                    Last 15 Transactions
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div>
+                                            <button type="submit" class="btn btn-primary">Submit Request</button>
+                                        </div>
+                                    </form>
                                 </div>
+                                <span><span style="color: red;">* </span>Marked fields are mandatory</span>
                             </div>
                         </div>
                     </div>

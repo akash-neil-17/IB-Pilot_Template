@@ -76,24 +76,26 @@
                 <!-- Animation -->
                 <div class="row">
                     <!-- <p>Welcome User</p> -->
-                    <marquee behavior="scroll" direction="left" style="background-color: #CFE2FF; border-radius: 5px; border: 1px solid black;"><strong>Welcome User</strong></marquee>
+                    <marquee behavior="scroll" direction="left" style="background-color: #CFE2FF; border-radius: 5px;"><strong>Welcome User</strong></marquee>
                 </div>
                 <div class="row">
                     <!-- Sidebar -->
                     <div class="col-lg-3 col-md-12 col-sm-12 mt-2">
                         <div class="card shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="border: none;">
                             <div class="card-header">
-                                My Accounts
+                                Card Services
                             </div>
                             <div class="card-body">
                                 <div class="list-group">
                                     <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                                        Bank Account
+                                        Activate/Deactivate Card
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action">Loan/Finance</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Term Deposit</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Tag Account</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Untag Account</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Card PIN Reset</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Card Activity</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Tag Credit/Prepaid Card</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Untag Credit/Prepaid Card</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Queries</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Proof of Tax Return Submission</a>
                                 </div>
                             </div>
                         </div>
@@ -103,41 +105,92 @@
                         <div class="accordion accordion-item shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="border: none;">
                             <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Conventional Linked Accounts
+                                    Activate/Deactivate Card
                                 </button>
                             </h2>
-                            <div class="accordion accordion-item mt-2" id="collapseTwo" style="border: none;">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Accounts
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body table-responsive">
-                                        <table class="table table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">Account Number</th>
-                                                    <th scope="col">Account Type</th>
-                                                    <th scope="col">Available Balance</th>
-                                                    <th scope="col">Ledger Balance</th>
-                                                    <th scope="col">Currency</th>
-                                                    <th scope="col">Status</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td scope="row">1</td>
-                                                    <td>Akash Chakraborty</td>
-                                                    <td>0.00</td>
-                                                    <td>0.00</td>
-                                                    <td>BDT</td>
-                                                    <td>Active</td>                                                    
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                            <div class="accordion accordion-item mt-2 accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseTwo" style="border: none;" >
+                                <div class="accordion-body">
+                                    <form>
+                                        <fieldset class="row mb-3">
+                                            <legend class="col-form-label col-md-3 pt-0">Card Type: </legend>
+                                            <div class="col-md-9">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                    <label class="form-check-label" for="gridRadios1">
+                                                    Debit Card
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                    <label class="form-check-label" for="gridRadios2">
+                                                    Credit/Prepaid Card
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="row mb-3">
+                                            <label for="accountNumber" class="col-md-3 col-form-label">Card Number<span style="color: red;"> *</span></label>
+                                            <div class="col-md-9">
+                                                <select class="form-select form-select-sm" id="accountNumber" required>
+                                                    <option selected>Select Debit Card</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                    <option value="3">Option 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="cardStatus" class="col-md-3 col-form-label">Card Status</label>
+                                            <div class="col-md-9">
+                                              <input type="text" class="form-control form-control-sm" id="cardStatus" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="monthlyStatement" class="col-md-3 col-form-label">Change Status<span style="color: red;"> *</span></label>
+                                            <div class="col-md-9">
+                                                <select class="form-select form-select-sm" id="monthlyStatement" required>
+                                                    <option selected>Select Status</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                    <option value="3">Option 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <fieldset class="row mb-3">
+                                            <legend class="col-form-label col-md-3 pt-0">OTP Type:</legend>
+                                            <div class="col-md-9">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                    <label class="form-check-label" for="gridRadios1">
+                                                    SMS
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                    <label class="form-check-label" for="gridRadios2">
+                                                    Email
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div>
+                                            <button type="submit" class="btn btn-primary">Next</button>
+                                        </div>
+                                    </form>
                                 </div>
+                                <span><span style="color: red;">* </span>Marked fields are mandatory</span>
+                                <br><br>
+                                <strong>
+                                    Note:
+                                    <br><br>
+                                    <ol>
+                                        <li>This service is not applicable for Supplementary Card.</li>
+                                        <li>If you select Stolen or Lost option your card will be permanently deactivated.</li>
+                                        <li>Use Restricted option for temporarily blocking the card.</li>
+                                        <li>Call 16234 for a replacement request or to reactivate the card.</li>
+                                        <li>Please do not activate a new/reissued card before receiving the card physically.</li>
+                                    </ol>
+                                </strong>
                             </div>
                         </div>
                     </div>
