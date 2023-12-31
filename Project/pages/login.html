@@ -24,7 +24,7 @@
             <!-- Form -->
             <div class="col-lg-5 col-md-6 col-sm-12 form-container">
                 <div class="container-fluid login-form">
-                    <form class="form">
+                    <form class="form" action="myAccounts.html">
                         <fieldset class="row mb-3 text-center">
                             <legend class="col-form-label col-lg-4 pt-0">Login via:</legend>
                             <div class="col-lg-8">
@@ -42,11 +42,11 @@
                                 </div>
                             </div>
                         </fieldset>
-                        <div class="form-floating mb-3">
+                        <div class="form-floating mb-3 floatingEmail">
                             <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
                             <label for="floatingEmail">Email</label>
                         </div>
-                        <div class="form-floating mb-3">
+                        <div class="form-floating mb-3 floatingMobile">
                             <input type="text" class="form-control" id="floatingMobile" placeholder="name@example.com">
                             <label for="floatingMobile">Mobile Number</label>
                         </div>
@@ -56,7 +56,8 @@
                                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                                 <label for="floatingPassword">Password</label>
                             </div>
-                            <button type="button" style="border: none;" id="passwordReveal"><i class="fa-solid fa-eye"></i></button>
+                            <button type="button" style="border: none;" id="passwordReveal"><i class="fa-solid fa-eye" aria-hidden="true"></i></button>
+                            <!-- <button type="button" style="border: none;" id="passwordHide" hidden><i class="fa-solid fa-eye-slash"></i></button> -->
                             
                         </div>
                         <div class="row mb-4">
@@ -89,4 +90,21 @@
 <script src="../js/bootstrap.min.js"></script>
 <!-- Font Awesome JS -->
 <script src="../js/all.min.js"></script>
+<!-- jQuery -->
+<script src="../js/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.floatingMobile').hide();
+        $('input[type="radio"]').change(function(){
+            if($(this).val()==='option2'){
+                $('.floatingMobile').show();
+                $('.floatingEmail').hide();
+            }
+            else{
+                $('.floatingEmail').show();
+                $('.floatingMobile').hide();
+            }
+        });        
+    });
+</script>
 </html>

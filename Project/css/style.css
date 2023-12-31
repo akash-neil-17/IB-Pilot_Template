@@ -30,10 +30,10 @@ body {
     overflow: hidden; */
     width: 75%;
 }
-/* .image-container {
-    flex: 1;
-    overflow: hidden;
-} */
+.image-container {
+    margin: 0;
+    padding: 0;
+}
 
 .image-container img {
     width: 100%;
@@ -49,6 +49,8 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    font-size: large;
+    font-family: 'Calibri';
 }
 .form{
     justify-content: center;
