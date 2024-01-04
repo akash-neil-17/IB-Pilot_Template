@@ -16,7 +16,7 @@
 <body>
     <!-- Login Dashboard -->
     <div class="container">
-        <div class="row shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <div class="row shadow-lg mb-5 bg-body-tertiary rounded">
             <!-- Image -->
             <div class="col-lg-7 col-md-6 image-container">
                 <img class="img-fluid" src="../img/digital_bank_in_bangladesh.avif" alt="Picture not Available">
@@ -51,36 +51,30 @@
                             <label for="floatingMobile">Mobile Number</label>
                         </div>
                         <div class="input-group mb-3">
-                            
                             <div class="form-floating">
                                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                                 <label for="floatingPassword">Password</label>
                             </div>
-                            <button type="button" style="border: none;" id="passwordReveal"><i class="fa-solid fa-eye" aria-hidden="true"></i></button>
-                            <!-- <button type="button" style="border: none;" id="passwordHide" hidden><i class="fa-solid fa-eye-slash"></i></button> -->
-                            
+                            <button type="button" style="border: none;" id="passwordReveal"><i class="icon fa-solid fa-eye-slash"></i></button>
                         </div>
                         <div class="row mb-4">
-                            <div class="col-md-6 d-flex justify-content-center">
-                              <!-- Checkbox -->
-                              <div class="form-check mb-3 mb-md-0">
-                                <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
-                                <label class="form-check-label" for="loginCheck"> Remember me </label>
-                              </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                                <!-- Checkbox -->
+                                <div class="form-check mb-3 mb-md-0">
+                                    <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                                    <label class="form-check-label" for="loginCheck"> Remember me </label>
+                                </div>
                             </div>
-                    
-                            <div class="col-md-6 d-flex justify-content-center">
-                              <!-- Simple link -->
-                              <a href="#!">Forgot password?</a>
+                            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                                <!-- Simple link -->
+                                <a href="#!">Forgot password?</a>
                             </div>
                         </div>
                         <div class="text-center">
                             <button type="submit" class="btn btn-primary mt-2">SIGN IN</button>
                         </div>
-                        
                     </form>
                 </div>
-                
             </div>
         </div>
     </div>
@@ -92,19 +86,6 @@
 <script src="../js/all.min.js"></script>
 <!-- jQuery -->
 <script src="../js/jquery-3.7.1.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $('.floatingMobile').hide();
-        $('input[type="radio"]').change(function(){
-            if($(this).val()==='option2'){
-                $('.floatingMobile').show();
-                $('.floatingEmail').hide();
-            }
-            else{
-                $('.floatingEmail').show();
-                $('.floatingMobile').hide();
-            }
-        });        
-    });
-</script>
+<!-- External JavaScript -->
+<script src="../js/project.js"></script>
 </html>

@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class="container shadow p-3 mb-5 bg-body-tertiary rounded" style="background-color: white; min-height: 60vh; font-size: small;">
-        <div class="container-fluid">
+        <!-- <div class="container-fluid"> -->
             <div class="row">
                 <div class="col-3">
                     <img src="../img/main_logo.jpg" class="img-fluid" alt="Logo" style="width: 100%; height: 18vh;">
@@ -87,28 +87,861 @@
                             </div>
                             <div class="card-body">
                                 <div class="list-group">
-                                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                                        MFS Transfer
-                                    </a>
-                                    <a href="#" class="list-group-item list-group-item-action">City Bank Account (Own)</a>
-                                    <a href="#" class="list-group-item list-group-item-action">City Bank Account (Other)</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Other Bank Account</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Schedule Transfer</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Binimoy</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Transfer By Email</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Cash By Code</a>
-                                    <a href="#" class="list-group-item list-group-item-action">History</a>
+                                    <a class="list-group-item list-group-item-action active" id="list-mfs-transfer-list" data-bs-toggle="list" href="#list-mfs-transfer" role="tab" aria-controls="list-mfs-transfer">MFS Transfer</a>
+                                    <a class="list-group-item list-group-item-action" id="list-own-this-bank-account-list" data-bs-toggle="list" href="#list-own-this-bank-account" role="tab" aria-controls="list-own-this-bank-account">City Bank Account (Own)</a>
+                                    <a class="list-group-item list-group-item-action" id="list-other-this-bank-account-list" data-bs-toggle="list" href="#list-other-this-bank-account" role="tab" aria-controls="list-other-this-bank-account">City Bank Account (Other)</a>
+                                    <a class="list-group-item list-group-item-action" id="list-other-bank-account-list" data-bs-toggle="list" href="#list-other-bank-account" role="tab" aria-controls="list-other-bank-account">Other Bank Account</a>
+                                    <a class="list-group-item list-group-item-action" id="list-schedule-transfer-list" data-bs-toggle="list" href="#list-schedule-transfer" role="tab" aria-controls="list-schedule-transfer">Schedule Transfer</a>
+                                    <a class="list-group-item list-group-item-action" id="list-binimoy-list" data-bs-toggle="list" href="#list-binimoy" role="tab" aria-controls="list-binimoy">Binimoy</a>
+                                    <a class="list-group-item list-group-item-action" id="list-transfer-by-email-list" data-bs-toggle="list" href="#list-transfer-by-email" role="tab" aria-controls="list-transfer-by-email">Transfer By Email</a>
+                                    <a class="list-group-item list-group-item-action" id="list-cash-by-code-list" data-bs-toggle="list" href="#list-cash-by-code" role="tab" aria-controls="list-cash-by-code">Cash By Code</a>
+                                    <a class="list-group-item list-group-item-action" id="list-history-list" data-bs-toggle="list" href="#list-history" role="tab" aria-controls="list-history">History</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Dashboard -->
-                    <div class="col-lg-9 col-md-12 col-sm-12 mt-2">
-                        <h3>Please apply/active your debit card or tag your credit/prepaid card to get full access with feature of Citytouch.</h3>
+                    <div class="col-lg-9 col-md-12 col-sm-12 mt-2 tab-content" id="nav-tabContent">
+                        <!-- MFS Transfer -->
+                        <div class="tab-pane fade show active" id="list-mfs-transfer" role="tabpanel" aria-labelledby="list-mfs-transfer-list">
+                            <div class="accordion accordion-item shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="border: none;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        MFS Transfer
+                                    </button>
+                                </h2>
+                                <div class="accordion accordion-item mt-2 accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseTwo" style="border: none;" >
+                                    <div class="accordion-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <button class="btn btn-outline-info">Add Beneficiary</button>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="mfsType" class="col-md-3 col-form-label">MFS Type<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <select class="form-select form-select-sm" id="mfsType" required>
+                                                        <option selected>Select MFS Type</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="3">Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="nickname" class="col-md-3 col-form-label">Nickname<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <select class="form-select form-select-sm" id="nickname" required>
+                                                        <option selected>Select Nickname</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="3">Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="accountNumber" class="col-md-3 col-form-label">Account Number<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="form-control form-control-sm" id="accountNumber">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="mfsAccount" class="col-md-3 col-form-label">MFS Account</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="mfsAccount" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="name" class="col-md-3 col-form-label">Name</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="name" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="fromAccountOrCard" class="col-md-3 col-form-label">From Account/Card<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <select class="form-select form-select-sm" id="fromAccountOrCard" required>
+                                                        <option selected>Select Account/Card</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="3">Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="availableBalance" class="col-md-3 col-form-label">Available Balance</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="availableBalance" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mb-3">
+                                                <button type="button" class="btn btn-outline-info">1,000</button>
+                                                <button type="button" class="btn btn-outline-info">5,000</button>
+                                                <button type="button" class="btn btn-outline-info">10,000</button>
+                                                <button type="button" class="btn btn-outline-info">20,000</button>
+                                                <button type="button" class="btn btn-outline-info">50,000</button>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="transferAmount" class="col-md-3 col-form-label">Transfer Amount<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="transferAmount" placeholder="0.00">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="serviceCharge" class="col-md-3 col-form-label">Service Charge @ 0.0%</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="serviceCharge" value="0.00" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="vatAmount" class="col-md-3 col-form-label">VAT @ 0.0%</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="vatAmount" value="0.00" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="availableBalance" class="col-md-3 col-form-label">Available Balance</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="availableBalance" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="grandTotalAmount" class="col-md-3 col-form-label">Grand Total Amount</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="grandTotalAmount" placeholder="0.00" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="remarks" class="col-md-3 col-form-label">Remarks</label>
+                                                <div class="col-md-9">
+                                                    <textarea class="form-control" id="remarks" cols="30" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <fieldset class="row mb-3">
+                                                <legend class="col-form-label col-md-3 pt-0">Transfer<span style="color: red;"> *</span></legend>
+                                                <div class="col-md-9">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                        <label class="form-check-label" for="gridRadios1">
+                                                        Pay Now
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                        <label class="form-check-label" for="gridRadios2">
+                                                        Schedule
+                                                        </label>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                            </fieldset>
+                                            <fieldset class="row mb-3">
+                                                <legend class="col-form-label col-md-3 pt-0">OTP Type<span style="color: red;"> *</span></legend>
+                                                <div class="col-md-9">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" checked>
+                                                        <label class="form-check-label" for="gridRadios3">
+                                                        SMS
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                                                        <label class="form-check-label" for="gridRadios4">
+                                                        Email
+                                                        </label>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </fieldset>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-primary">Next</button>
+                                                <button type="reset" class="btn btn-primary">Reset</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <span><span style="color: red;">* </span>Marked fields are mandatory</span>
+                                    <br><br>
+                                    <strong>
+                                        Notes:
+                                        <br><br>
+                                        <ol>
+                                            <li>Minimum transfer amount per transaction is Tk. 50 and maximum Tk 50,000.</li>
+                                            <li>Daily transfer limit to a single bKash account is Tk. 50,000.</li>
+                                            <li>Monthly transfer limit to a single bKash account is Tk. 3 lacs.</li>
+                                            <li>Bank to bKash overall transfer limit is Tk. 1 lac per day.</li>
+                                            <li>For fund transfer from prepaid credit card, minimum amount is Tk. 500 and maximum amount is 50% of total available limit (BDT part).</li>
+                                            <li>For fund transfer from conventional credit card, processing fee of 2% or Tk. 100 (whichever is higher) will be charged (15% VAT applicable).</li>
+                                            <li>For fund transfer from Islamic credit card, processing fee of Tk. 500 will be charged (15% VAT applicable).</li>
+                                            <li>For bkash Fund Transfer from Conventional Account, Islamic Account, and Consumer Prepaid Card, no charge is applicable.</li>
+                                            <li>Consecutive transfer in the same bKash account require minimum 10 minutes<span>'</span> interval.</li>
+                                            <li>Please input all the information of the recipient carefully and recheck before confirming. The City Bank Limited will not be liable if fund is transferred to an unintended recipient due to wrong input by the customer.</li>
+                                        </ol>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Own This Bank Account -->
+                        <div class="tab-pane fade" id="list-own-this-bank-account" role="tabpanel" aria-labelledby="list-own-this-bank-account-list">
+                            <div class="accordion accordion-item shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="border: none;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        This Bank Account (Own) - Fund Transfer
+                                    </button>
+                                </h2>
+                                <div class="accordion accordion-item mt-2 accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseTwo" style="border: none;" >
+                                    <div class="accordion-body">
+                                        <form>
+                                            <div class="row mb-3">
+                                                <label for="fromAccountOrCard" class="col-md-3 col-form-label">From Account/Card<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <select class="form-select form-select-sm" id="fromAccountOrCard" required>
+                                                        <option selected>Select Account/Card</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="3">Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="senderAvailableBalance" class="col-md-3 col-form-label">Available Balance</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="senderAvailableBalance" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="senderCurrency" class="col-md-3 col-form-label">Currency</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="senderCurrency" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="ToAccountOrCard" class="col-md-3 col-form-label">To Account/Card<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <select class="form-select form-select-sm" id="ToAccountOrCard" required>
+                                                        <option selected>Select Account/Card</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="3">Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="receiverAvailableBalance" class="col-md-3 col-form-label">Available Balance</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="receiverAvailableBalance" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="receiverCurrency" class="col-md-3 col-form-label">Currency</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="receiverCurrency" disabled>
+                                                </div>
+                                            </div><div class="text-center mb-3">
+                                                <button type="button" class="btn btn-outline-info">10,000</button>
+                                                <button type="button" class="btn btn-outline-info">25,000</button>
+                                                <button type="button" class="btn btn-outline-info">50,000</button>
+                                                <button type="button" class="btn btn-outline-info">1,00,000</button>
+                                                <button type="button" class="btn btn-outline-info">5,00,000</button>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="transferAmount" class="col-md-3 col-form-label">Transfer Amount<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="transferAmount" placeholder="0.00">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="serviceCharge" class="col-md-3 col-form-label">Service Charge @ 0.0%</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="serviceCharge" value="0.00" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="vatAmount" class="col-md-3 col-form-label">VAT @ 0.0%</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="vatAmount" value="0.00" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="grandTotalAmount" class="col-md-3 col-form-label">Grand Total Amount</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="grandTotalAmount" placeholder="0.00" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="remarks" class="col-md-3 col-form-label">Remarks</label>
+                                                <div class="col-md-9">
+                                                    <textarea class="form-control" id="remarks" cols="30" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <fieldset class="row mb-3">
+                                                <legend class="col-form-label col-md-3 pt-0">OTP Type<span style="color: red;"> *</span></legend>
+                                                <div class="col-md-9">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" checked>
+                                                        <label class="form-check-label" for="gridRadios3">
+                                                        SMS
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                                                        <label class="form-check-label" for="gridRadios4">
+                                                        Email
+                                                        </label>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </fieldset>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-primary">Next</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <span><span style="color: red;">* </span>Marked fields are mandatory</span>
+                                    <br><br>
+                                    <strong>
+                                        Notes:
+                                        <br><br>
+                                        <ol>
+                                            <li>There is no limit of fund transfer amount between own accounts.</li>
+                                            <li>For fund transfer from credit card, minimum amount is BDT 500 and maximum amount is 50% of total available limit (BDT part).</li>
+                                            <li>For fund transfer from conventional credit card, processing fee of 2% or BDT 100 (whichever is higher) will be charged (15% VAT applicable).</li>
+                                            <li>For fund transfer from Islamic credit card, processing fee of BDT 500 will be charged (15% VAT applicable).</li>
+                                            
+                                        </ol>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Other This Bank Account -->
+                        <div class="tab-pane fade" id="list-other-this-bank-account" role="tabpanel" aria-labelledby="list-other-this-bank-account-list">
+                            <div class="accordion accordion-item shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="border: none;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        MFS Transfer
+                                    </button>
+                                </h2>
+                                <div class="accordion accordion-item mt-2 accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseTwo" style="border: none;" >
+                                    <div class="accordion-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <button class="btn btn-outline-info active">Single Transfer</button>
+                                                <button class="btn btn-outline-info">Transfer to Beneficiary</button>
+                                                <button class="btn btn-outline-info">Add Beneficiary</button>
+                                            </div>
+                                            <h3>Single Transfer</h3>
+                                            <div class="row mb-3">
+                                                <label for="fromAccountOrCard" class="col-md-3 col-form-label">From Account/Card<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <select class="form-select form-select-sm" id="fromAccountOrCard" required>
+                                                        <option selected>Select Account/Card</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="3">Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="availableBalance" class="col-md-3 col-form-label">Available Balance</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="availableBalance" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="currency" class="col-md-3 col-form-label">Currency</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="currency" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="beneficiaryAccountNumber" class="col-md-3 col-form-label">To Account</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="beneficiaryAccountNumber" placeholder="Beneficiary Account Number">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="beneficiaryAccountHolderName" class="col-md-3 col-form-label">Account Holder Name</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="beneficiaryAccountHolderName" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="beneficiaryCurrency" class="col-md-3 col-form-label">Currency</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="beneficiaryCurrency" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mb-3">
+                                                <button type="button" class="btn btn-outline-info">10,000</button>
+                                                <button type="button" class="btn btn-outline-info">25,000</button>
+                                                <button type="button" class="btn btn-outline-info">50,000</button>
+                                                <button type="button" class="btn btn-outline-info">1,00,000</button>
+                                                <button type="button" class="btn btn-outline-info">5,00,000</button>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="transferAmount" class="col-md-3 col-form-label">Transfer Amount<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="transferAmount" placeholder="0.00">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="serviceCharge" class="col-md-3 col-form-label">Service Charge @ 0.0%</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="serviceCharge" value="0.00" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="vatAmount" class="col-md-3 col-form-label">VAT @ 0.0%</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="vatAmount" value="0.00" disabled>
+                                                </div>
+                                            </div><div class="row mb-3">
+                                                <label for="grandTotalAmount" class="col-md-3 col-form-label">Grand Total Amount</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="grandTotalAmount" placeholder="0.00" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="remarks" class="col-md-3 col-form-label">Remarks</label>
+                                                <div class="col-md-9">
+                                                    <textarea class="form-control" id="remarks" cols="30" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <fieldset class="row mb-3">
+                                                <legend class="col-form-label col-md-3 pt-0">OTP Type<span style="color: red;"> *</span></legend>
+                                                <div class="col-md-9">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" checked>
+                                                        <label class="form-check-label" for="gridRadios3">
+                                                        SMS
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                                                        <label class="form-check-label" for="gridRadios4">
+                                                        Email
+                                                        </label>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </fieldset>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-primary">Next</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <span><span style="color: red;">* </span>Marked fields are mandatory</span>
+                                    <br><br>
+                                    <strong>
+                                        Notes:
+                                        <br><br>
+                                        <ol>
+                                            <li>Maximum daily transaction limit from "This Bank" is BDT 30 lacs (including all kinds of transactions).</li>
+                                            <li>Within This Bank (Other) transfer limit per day is BDT 20 lacs and per transaction is BDT 10 lacs.</li>
+                                            <li>For fund transfer from credit card, minimum amount is BDT 500 and maximum amount is 50% of total available limit (BDT part).</li>
+                                            <li>For fund transfer from conventional credit card, processing fee of 2% or BDT 100 (whichever is higher) will be charged (15% VAT applicable).</li>
+                                            <li>For fund transfer from Islamic credit card, processing fee of BDT 500 will be charged (15% VAT applicable).</li>
+                                            <li>Consecutive fund transfer to the same account requires an interval of 10 minutes.</li>
+                                            <li>Please input all the information of the recipient carefully and recheck before confirming. City Bank PLC. will not be liable if fund is transferred to an unintended recipient due to wrong input by the customer.</li>
+                                        </ol>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Other Bank Account -->
+                        <div class="tab-pane fade" id="list-other-bank-account" role="tabpanel" aria-labelledby="list-other-bank-account-list">
+                            <div class="accordion accordion-item shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="border: none;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Other Bank Account - Fund Transfer
+                                    </button>
+                                </h2>
+                                <div class="accordion accordion-item mt-2 accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseTwo" style="border: none;" >
+                                    <div class="accordion-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <button class="btn btn-outline-info active">Single Transfer</button>
+                                                <button class="btn btn-outline-info">Transfer to Beneficiary</button>
+                                                <button class="btn btn-outline-info">Add Beneficiary</button>
+                                            </div>
+                                            <h3>Single Transfer</h3>
+                                            <div class="row mb-3">
+                                                <label for="fromAccountOrCard" class="col-md-3 col-form-label">From Account/Card<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <select class="form-select form-select-sm" id="fromAccountOrCard" required>
+                                                        <option selected>Select Account/Card</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="3">Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="availableBalance" class="col-md-3 col-form-label">Available Balance</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="availableBalance" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="currency" class="col-md-3 col-form-label">Currency</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="currency" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mb-3">
+                                                <button type="button" class="btn btn-outline-info">10,000</button>
+                                                <button type="button" class="btn btn-outline-info">50,000</button>
+                                                <button type="button" class="btn btn-outline-info">1,00,000</button>
+                                                <button type="button" class="btn btn-outline-info">3,00,000</button>
+                                                <button type="button" class="btn btn-outline-info">5,00,000</button>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="transferAmount" class="col-md-3 col-form-label">Transfer Amount<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="transferAmount" placeholder="0.00">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="fromAccountOrCard" class="col-md-3 col-form-label">Account Type<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <select class="form-select form-select-sm" id="fromAccountOrCard" required>
+                                                        <option selected>Select Account Type</option>
+                                                        <option value="1">Account</option>
+                                                        <option value="2">Card</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="transferMode" class="col-md-3 col-form-label">Transfer Mode<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">BEFTN (Regular Transfer)</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">RTGS (Instant Transfer)</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                        <label class="form-check-label" for="inlineRadio3">NPSB (Instant Transfer)</label>
+                                                    </div>
+                                                    
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="beneficiaryAccountOrCardNumber" class="col-md-3 col-form-label">Beneficiary Account/Card Number<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="beneficiaryAccountOrCardNumber">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="beneficiaryName" class="col-md-3 col-form-label">Beneficiary Name<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="beneficiaryName">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="bankName" class="col-md-3 col-form-label">Bank Name<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <select class="form-select form-select-sm" id="bankName" required>
+                                                        <option selected>Select Bank Name</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="3">Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="districtName" class="col-md-3 col-form-label">District Name<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <select class="form-select form-select-sm" id="districtName" required>
+                                                        <option selected>Select District Name</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="3">Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="branchName" class="col-md-3 col-form-label">Branch Name<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <select class="form-select form-select-sm" id="branchName" required>
+                                                        <option selected>Select Branch Name</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="3">Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="serviceCharge" class="col-md-3 col-form-label">Service Charge @ 0.0%</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="serviceCharge" value="0.00" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="vatAmount" class="col-md-3 col-form-label">VAT @ 0.0%</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="vatAmount" value="0.00" disabled>
+                                                </div>
+                                            </div><div class="row mb-3">
+                                                <label for="grandTotalAmount" class="col-md-3 col-form-label">Grand Total Amount</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="grandTotalAmount" placeholder="0.00" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="remarks" class="col-md-3 col-form-label">Remarks</label>
+                                                <div class="col-md-9">
+                                                    <textarea class="form-control" id="remarks" cols="30" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <fieldset class="row mb-3">
+                                                <legend class="col-form-label col-md-3 pt-0">OTP Type<span style="color: red;"> *</span></legend>
+                                                <div class="col-md-9">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" checked>
+                                                        <label class="form-check-label" for="gridRadios3">
+                                                        SMS
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                                                        <label class="form-check-label" for="gridRadios4">
+                                                        Email
+                                                        </label>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </fieldset>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-primary">Next</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <span><span style="color: red;">* </span>Marked fields are mandatory</span>
+                                    <br><br>
+                                    <strong>
+                                        Notes:
+                                        <br><br>
+                                        <ol>
+                                            <li>Maximum daily transaction limit from "This Bank" is BDT 30 lacs (including all kinds of transactions).</li>
+                                            <li>BEFTN: Transfer limit is BDT 10 lacs per day and maximum limit BDT 5 lacs per transaction. The fund transfer requests placed before 11:30AM will be executed by 3PM on the same working day. The requests placed between 11:30AM and 2:30PM will be executed within the same working day. The requests placed between 2:30PM and 12:00AM will be settled in the morning of the next working day.</li>
+                                            <li>RTGS: Transfer limit is BDT 10 lacs per day and transfer limit per transaction is minimum BDT 1 lac & maximum BDT 5 lacs. Available from 10:00 AM to 03:30 PM during working days only. Service Charge: BDT 100 (VAT inclusive).</li>
+                                            <li>NPSB: Transfer limit is BDT 10 lacs per day and maximum limit BDT 3 lacs per transaction. Service Charge: BDT 10 (VAT inclusive).</li>
+                                            <li>For fund transfer from credit card, minimum amount is BDT 500 and maximum amount is 50% of total available limit (BDT part).</li>
+                                            <li>For fund transfer from conventional credit card, processing fee of 2% or BDT 100 (whichever is higher) will be charged (15% VAT applicable).</li>
+                                            <li>For fund transfer from Islamic credit card, processing fee of BDT 500 will be charged (15% VAT applicable).</li>
+                                            <li>Consecutive fund transfer to the same account requires an interval of 10 minutes.</li>
+                                            <li>Please input all the information of the recipient carefully and recheck before confirming. City Bank PLC. will not be liable if fund is transferred to an unintended recipient due to wrong input by the customer.</li>
+                                        </ol>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Schedule Transfer -->
+                        <div class="tab-pane fade" id="list-schedule-transfer" role="tabpanel" aria-labelledby="list-schedule-transfer-list">
+                            <div class="accordion accordion-item shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="border: none;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Schedule Transfer
+                                    </button>
+                                </h2>
+                                <div class="accordion accordion-item mt-2 accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseTwo" style="border: none;" >
+                                    <div class="accordion-body">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Binimoy -->
+                        <div class="tab-pane fade" id="list-binimoy" role="tabpanel" aria-labelledby="list-binimoy-list">
+
+                        </div>
+                        <!-- Transfer By Email -->
+                        <div class="tab-pane fade" id="list-transfer-by-email" role="tabpanel" aria-labelledby="list-transfer-by-email-list">
+
+                        </div>
+                        <!-- Cash By Code -->
+                        <div class="tab-pane fade" id="list-cash-by-code" role="tabpanel" aria-labelledby="list-cash-by-code-list">
+                            <div class="accordion accordion-item shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="border: none;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Request For Cash By Code
+                                    </button>
+                                </h2>
+                                <div class="accordion accordion-item mt-2 accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseTwo" style="border: none;" >
+                                    <div class="accordion-body">
+                                        <form>
+                                            <div class="row mb-3">
+                                                <label for="selectCard" class="col-md-3 col-form-label">Select Card to Generate<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <select class="form-select form-select-sm" id="fromAccountOrCard" required>
+                                                        <option selected>Select Card</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="3">Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="availableBalance" class="col-md-3 col-form-label">Available Balance</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="availableBalance" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mb-3">
+                                                <button type="button" class="btn btn-outline-info">1,000</button>
+                                                <button type="button" class="btn btn-outline-info">2,000</button>
+                                                <button type="button" class="btn btn-outline-info">5,000</button>
+                                                <button type="button" class="btn btn-outline-info">10,000</button>
+                                                <button type="button" class="btn btn-outline-info">20,000</button>
+                                                <button type="button" class="btn btn-outline-info">40,000</button>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="amount" class="col-md-3 col-form-label">Amount<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="amount" placeholder="0.00">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row mb-3">
+                                                <label for="beneficiaryMobileNumber" class="col-md-3 col-form-label">Beneficiary Mobile Number<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="form-control form-control-sm" id="beneficiaryMobileNumber">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="remarks" class="col-md-3 col-form-label">Remarks</label>
+                                                <div class="col-md-9">
+                                                    <textarea class="form-control" id="remarks" cols="30" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="transferMode" class="col-md-3 col-form-label">Cash Code Via<span style="color: red;"> *</span></label>
+                                                <div class="col-md-9">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                                                        <label class="form-check-label" for="inlineRadio1">Screen Display</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">SMS</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                        <label class="form-check-label" for="inlineRadio3">Email</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="serviceCharge" class="col-md-3 col-form-label">Service Charge</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="serviceCharge" value="0.00" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="vatAmount" class="col-md-3 col-form-label">VAT @ 0.0%</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="vatAmount" value="0.00" disabled>
+                                                </div>
+                                            </div><div class="row mb-3">
+                                                <label for="grandTotalAmount" class="col-md-3 col-form-label">Grand Total Amount</label>
+                                                <div class="col-md-9">
+                                                  <input type="text" class="form-control form-control-sm" id="grandTotalAmount" placeholder="0.00" disabled>
+                                                </div>
+                                            </div>
+                                            <fieldset class="row mb-3">
+                                                <legend class="col-form-label col-md-3 pt-0">OTP Type<span style="color: red;"> *</span></legend>
+                                                <div class="col-md-9">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" checked>
+                                                        <label class="form-check-label" for="gridRadios3">
+                                                        SMS
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                                                        <label class="form-check-label" for="gridRadios4">
+                                                        Email
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-primary">Next</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <span><span style="color: red;">* </span>Marked fields are mandatory</span>
+                                    <br><br>
+                                    <strong>
+                                        Notes:
+                                        <br><br>
+                                        <ol>
+                                            <li>Transaction amount should be a multiple of BDT 500, up to BDT 40,000 for each transaction.</li>
+                                            <li>Maximum transfer count per day is 10.</li>
+                                            <li>The generated code will be valid for 1 (one) hour.</li>
+                                        </ol>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- History -->
+                        <div class="tab-pane fade" id="list-history" role="tabpanel" aria-labelledby="list-history-list">
+                            <div class="accordion accordion-item shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="border: none;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Fund Transfer History
+                                    </button>
+                                </h2>
+                                <div class="accordion accordion-item mt-2 accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseTwo" style="border: none;" >
+                                    <div class="accordion-body table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Transaction Date</th>
+                                                    <th scope="col">Type of Fund Transfer</th>
+                                                    <th scope="col">From Account/Card</th>
+                                                    <th scope="col">To Account</th>
+                                                    <th scope="col">Amount</th>
+                                                    <th scope="col">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row"></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
         <hr>
         <!-- Footer -->
         <div class="row text-center" style="color: black;">
