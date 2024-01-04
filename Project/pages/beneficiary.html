@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilot Project/Settings</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../css/all.min.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../img/Citi-Logo-White.png" type="image/x-icon">
+  <style>
+    .breadcrumb {
+      --bs-breadcrumb-divider-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container shadow p-3 mb-5 bg-body-tertiary rounded"
+    style="background-color: white; min-height: 60vh; font-size: small;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <img src="../img/main_logo.jpg" class="img-fluid" alt="Logo" style="width: 100%; height: 18vh;">
+        </div>
+        <div class="col-9" style="background-image: url(../img/digital-banking.jpg);height: 18vh;">
+          <nav style="--bs-breadcrumb-divider: '|'; color: white;" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item" aria-current="page">Home</li>
+              <li class="breadcrumb-item">About Us</li>
+              <li class="breadcrumb-item">Contact Us</li>
+              <li class="breadcrumb-item">Locate Us</li>
+              <li class="breadcrumb-item">Logout</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- Navigation Bar -->
+      <div class="row">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav m-auto">
+              <a class="nav-link" aria-current="page" href="myAccounts.html">My Accounts</a>
+              <a class="nav-link" href="favorites.html">Favorites</a>
+              <a class="nav-link" href="#">Beneficiary</a>
+              <a class="nav-link" href="fundTransfer.html">Fund Transfer</a>
+              <a class="nav-link" href="#">Mobile Recharge</a>
+              <a class="nav-link" href="#">Utility Bill</a>
+              <a class="nav-link" href="#">Payments</a>
+              <a class="nav-link active" href="accountServices.html">Account Services</a>
+              <a class="nav-link" href="cardService.html">Card Services</a>
+              <a class="nav-link" href="#">Loan/Finance Services</a>
+              <a class="nav-link" href="./settings.html">Settings</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <hr>
+      <!-- Section -->
+      <div class="container-fluid bg-body-tertiary rounded">
+        <!-- Greeting User and Login Time display -->
+        <div class="row">
+          <!-- Greeting User -->
+          <div class="col-3">
+            <p>Welcome, User</p>
+          </div>
+          <!-- Login Time -->
+          <div class="col-9">
+            <span id="currentTime" style="display: inline; float: inline-end;"></span>
+            <p style="display: inline; float: inline-end;">Your last login time: &nbsp;</p>
+          </div>
+        </div>
+        <!-- Animation -->
+        <div class="row">
+          <!-- <p>Welcome User</p> -->
+          <marquee behavior="scroll" direction="left" style="background-color: #CFE2FF; border-radius: 5px;">
+            <strong>Welcome User</strong>
+          </marquee>
+        </div>
+        <!-- SIDE BAR START -->
+        <div class="row bg-body-tertiary">
+          <div class="col-lg-3 col-md-12 col-sm-12 mt-2">
+            <div class="card">
+
+              <div class="card-header">
+                Beneficiary
+              </div>
+              <div class="card-body">
+                <div class="list-group" id="list-tab" role="tablist">
+                  <a class="list-group-item list-group-item-action active" id="list-mfsTransfer-list"
+                    data-bs-toggle="list" href="#list-mfsTransfer" role="tab" aria-controls="list-mfsTransfer">MFS
+                    Transfer</a>
+                  <a class="list-group-item list-group-item-action" id="list-bankAccount-list" data-bs-toggle="list"
+                    href="#list-bankAccount" role="tab" aria-controls="list-bankAccount">_sonli_intellect_Bank
+                    Account</a>
+                  <a class="list-group-item list-group-item-action" id="list-otherBankAccount-list"
+                    data-bs-toggle="list" href="#list-otherBankAccount" role="tab"
+                    aria-controls="list-otherBankAccount">Other Bank Account</a>
+                  <a class="list-group-item list-group-item-action" id="list-transferByEmail-list" data-bs-toggle="list"
+                    href="#list-transferByEmail" role="tab" aria-controls="list-transferByEmail">Transfer By Email</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SIDE BAR END -->
+          <!-- MAIN VIEW STAT UPON SELECTION -->
+          <div class="col-lg-9 col-md-12 col-sm-12 mt-2">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-mfsTransfer" role="tabpanel"
+                aria-labelledby="list-mfsTransfer-list">
+                <!-- MFS Transfer -->
+                <div class="card">
+                  <div class="card-header">
+                    MFS Fund Transfer - Beneficiary
+                  </div>
+                  <div class="card-body">
+                    <button type="button" class="btn btn-primary">Add Beneficiary</button>
+
+                    <div class="accordion accordion-item mt-2" id="collapseTwo" style="border: none;">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accounts
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse show"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body table-responsive">
+                          <div class="row mb-3 justify-content-end">
+                            <div class="col col-sm-4">
+                              <form class="d-flex justify-content-end">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                              </form>
+                            </div>
+                          </div>
+                          <table class="table table-hover">
+                            <thead>
+                              <tr class="table-dark">
+                                <th scope="col">MFS Type</th>
+                                <th scope="col">MFS Account</th>
+                                <th scope="col">Nickname</th>
+                                <th scope="col">Action</th>
+
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td scope="row">bKash</td>
+                                <td>0123012345</td>
+                                <td>Chandrashekhar</td>
+                                <td>X</td>
+
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <nav aria-label="...">
+                          <ul class="pagination justify-content-end">
+                            <li class="page-item disabled">
+                              <a class="page-link">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+                              <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">Next</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- end -->
+              <div class="tab-pane fade" id="list-bankAccount" role="tabpanel" aria-labelledby="list-bankAccount-list">
+                <!-- sonali intellect account -->
+                <div class="card">
+                  <div class="card-header">
+                    sonali intellect account (other) Fund transfer - Beneficiary
+                  </div>
+                  <div class="card-body">
+                    <button type="button" class="btn btn-primary">Add Beneficiary</button>
+
+
+                    <div class="row mb-3 justify-content-end">
+                      <div class="col col-sm-4">
+                        <form class="d-flex justify-content-end">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr class="table-dark">
+                          <th scope="col">Nickname</th>
+                          <th scope="col">Account Number</th>
+                          <th scope="col">Account name holder</th>
+                          <th scope="col">Currency</th>
+                          <th scope="col">Mobile</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Action</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row">Chandrashekhar</td>
+                          <td>0123012345</td>
+                          <td>Chandrashekhar</td>
+                          <td>BDT</td>
+                          <td>0123012345</td>
+                          <td>Chandrashekhar@emial.com</td>
+                          <td>X</td>
+
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <nav aria-label="...">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+
+                </div>
+
+              </div>
+
+
+              <!-- end -->
+
+
+
+              <!-- otherBankAccount-->
+              <div class="tab-pane fade" id="list-otherBankAccount" role="tabpanel"
+                aria-labelledby="list-otherBankAccount-list">
+                <div class="card">
+                  <div class="card-header">
+                    other bank account (other) Fund transfer - Beneficiary
+                  </div>
+                  <div class="card-body">
+                    <button type="button" class="btn btn-primary">Add Beneficiary</button>
+
+
+                    <div class="row mb-3 justify-content-end">
+                      <div class="col col-sm-4">
+                        <form class="d-flex justify-content-end">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr class="table-dark">
+                          <th scope="col">Nickname</th>
+                          <th scope="col">Account Number</th>
+                          <th scope="col">Account name holder</th>
+                          <th scope="col">Currency</th>
+                          <th scope="col">Mobile</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Action</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row">Chandrashekhar</td>
+                          <td>0123012345</td>
+                          <td>Chandrashekhar</td>
+                          <td>BDT</td>
+                          <td>0123012345</td>
+                          <td>Chandrashekhar@emial.com</td>
+                          <td>X</td>
+
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <nav aria-label="...">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+
+                </div>
+
+              </div>
+              <!-- ends -->
+              <!--  email transfer-->
+              <div class="tab-pane fade" id="list-transferByEmail" role="tabpanel"
+                aria-labelledby="list-transferByEmail-list">
+                <div class="card">
+                  <div class="card-header">
+                    Email Fund Transfer Beneficiary
+                  </div>
+                  <div class="card-body">
+                    <button type="button" class="btn btn-primary">Add Beneficiary</button>
+
+
+                    <div class="row mb-3 justify-content-end">
+                      <div class="col col-sm-4">
+                        <form class="d-flex justify-content-end">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr class="table-dark">
+                          <th scope="col">Nickname</th>
+                          <th scope="col">Beneficiary Email Address</th>
+                          <th scope="col">Bne Mobile Number</th>
+                          <th scope="col">Action</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row">Chandrashekhar</td>
+                          <td>Chandrashekhar@email.com</td>
+                          <td>012310103</td>
+                          <td>X</td>
+
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <nav aria-label="...">
+                      <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                          <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active" aria-current="page">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- MAIN VIEW ENDS -->
+      <hr>
+
+      <!-- Footer -->
+      <div class="row text-center" style="color: black;">
+        <footer>
+          <p>&copy; Sonali Intellect Limited</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- Bootstrap JS -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Font Awesome JS -->
+<script src="../js/all.min.js"></script>
+<script>
+  // Function to update the text box with the current time
+  function updateCurrentTime() {
+    var currentDate = new Date();
+    var hours = currentDate.getHours();
+    var minutes = currentDate.getMinutes();
+    var seconds = currentDate.getSeconds();
+    var formattedTime = padZero(hours) + ":" + padZero(minutes) + ":" + padZero(seconds);
+    document.getElementById("currentTime").innerHTML = formattedTime;
+  }
+
+  // Function to pad a single digit number with a leading zero
+  function padZero(number) {
+    return number < 10 ? "0" + number : number;
+  }
+
+  // Update the current time initially
+  updateCurrentTime();
+
+  // Update the current time every second (1000 milliseconds)
+  setInterval(updateCurrentTime, 1000);
+</script>
+
+</html>
