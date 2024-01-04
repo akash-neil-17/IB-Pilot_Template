@@ -91,16 +91,16 @@
                         <div class="card">
 
                             <div class="card-header justify-content-between">
-                                Mobile Recharge
+                                Bills & Fees
                             </div>
 
                             <div class="card-body">
                                 <form>
                                     <div class="row mb-3">
-                                        <label for="accountNumber" class="col-md-3 col-form-label">Statement for Account Number<span style="color: red;"> *</span></label>
+                                        <label for="billType" class="col-md-3 col-form-label">Bill Type<span style="color: red;"> *</span></label>
                                         <div class="col-md-9">
-                                            <select class="form-select form-select-sm" id="accountNumber" required>
-                                                <option selected>Select Account</option>
+                                            <select class="form-select form-select-sm" id="billType" required>
+                                                <option selected>Select Type</option>
                                                 <option value="1">Option 1</option>
                                                 <option value="2">Option 2</option>
                                                 <option value="3">Option 3</option>
@@ -108,22 +108,115 @@
                                         </div>
                                     </div>
                                     <div class="row mb-3">
-                                        <label for="statementFromDate" class="col-md-3 col-form-label">Statement From Date</label>
+                                        <label for="billerName" class="col-md-3 col-form-label">Biller Nmae<span style="color: red;"> *</span></label>
                                         <div class="col-md-9">
-                                          <input type="date" class="form-control form-control-sm" id="statementFromDate">
+                                            <select class="form-select form-select-sm" id="billerName" required>
+                                                <option selected>Select biller name</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="row mb-3">
-                                        <label for="statementTillDate" class="col-md-3 col-form-label">Statement Till Date</label>
-                                        <div class="col-md-9">
-                                          <input type="date" class="form-control form-control-sm" id="statementTillDate">
+                                        <label for="billAccountNumber" class="col-sm-3 col-form-label">
+                                            Bill Account Number<span style="color: red;"">* </spand></label>
+                                        <div class="col-sm-7">
+                                            
+                                                <input type="text" class="form-control" id="billAccountNumber"
+                                                    placeholder="0.00">
+                                            
                                         </div>
                                     </div>
                                     <div class="row mb-3">
-                                        <label for="monthlyStatement" class="col-md-3 col-form-label">Monthly Statement (Up to last 6 months)</label>
+                                        <label for="billNumber" class="col-sm-3 col-form-label">
+                                            Bill Numberr<span style="color: red;"">* </spand></label>
+                                        <div class="col-sm-7">
+                                            
+                                                <input type="text" class="form-control" id="billNumber"
+                                                    placeholder="0.00">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="fromDate" class="col-sm-3 col-form-label">
+                                            From Date</label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="fromDate"
+                                                    >
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="ToDate" class="col-sm-3 col-form-label">
+                                            TO Date</label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="ToDate"
+                                                    >
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="dueDate" class="col-sm-3 col-form-label">
+                                            Bill Due Date</label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="dueDate"
+                                                    >
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="billAmount" class="col-sm-3 col-form-label">
+                                            Bill Amount</label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="billAmount"
+                                                    >
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="lateFee" class="col-sm-3 col-form-label">
+                                            Late Fee</label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="lateFee"
+                                                    >
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="vat" class="col-sm-3 col-form-label">
+                                            VAT</label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="vat"
+                                                    >
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="totalBillAmount" class="col-sm-3 col-form-label">
+                                           Total Bill Amount</label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="totalBillAmount"
+                                                    >
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                            
+                                   
+                                   
+                                   
+                                    <div class="row mb-3">
+                                        <label for="formAccount"col-md-3 col-form-label">From Account <span style="color: red;">*</span></label>
                                         <div class="col-md-9">
-                                            <select class="form-select form-select-sm" id="monthlyStatement" required>
-                                                <option selected>Select Month</option>
+                                            <select class="form-select form-select-sm" id="fromAccount" required>
+                                                <option selected>Select Account/Card</option>
                                                 <option value="1">Option 1</option>
                                                 <option value="2">Option 2</option>
                                                 <option value="3">Option 3</option>
@@ -131,32 +224,107 @@
                                         </div>
                                     </div>
                                     <fieldset class="row mb-3">
-                                        <legend class="col-form-label col-md-3 pt-0">Statement Format<span style="color: red;"> *</span></legend>
+                                        <legend class="col-form-label col-md-3 pt-0">OTP Type<span style="color: red;"> *</span></legend>
                                         <div class="col-md-9">
                                             <div class="form-check form-check-inline">
                                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                                                 <label class="form-check-label" for="gridRadios1">
-                                                Display On Screen
+                                                SMS
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
                                                 <label class="form-check-label" for="gridRadios2">
-                                                Save as PDF Format
+                                                Email
                                                 </label>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-                                                <label class="form-check-label" for="gridRadios3">
-                                                Last 15 Transactions
-                                                </label>
-                                            </div>
+                                            
                                         </div>
                                     </fieldset>
-                                    <div>
+                                    <div class="row mb-3">
+                                        <label for="availableBlance" class="col-sm-3 col-form-label">
+                                            Available Balance<span style="color: red;"">* </spand></label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="availableBlance"
+                                                    placeholder="0.00">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="serviceCharge" class="col-sm-3 col-form-label">
+                                           Service Charge</label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="serviceCharge"
+                                                    >
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="vat" class="col-sm-3 col-form-label">
+                                           VAT</label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="vat"
+                                                    >
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <label for="totalAmount" class="col-sm-3 col-form-label">
+                                            Total Amount<span style="color: red;">*</span></label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="totalAmount"
+                                                    placeholder="0.00">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="serviceCharge" class="col-sm-3 col-form-label">
+                                            Service Charge @ 0.0%</label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="serviceCharge"
+                                                    placeholder="0.00">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="grandTotal" class="col-sm-3 col-form-label">
+                                            Grand Total Amount</label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="grandTotal"
+                                                    placeholder="0.00">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center">
                                         <button type="submit" class="btn btn-primary">Submit Request</button>
                                     </div>
                                 </form>
+                        </div>
+                        <div class="bg-body-tertiary justify-content-between">
+
+
+                            <strong>
+
+                                <div>Note:</div>
+                                <br>
+                                <ol>
+                        <li>Minimum recharge amount for postpaid connection is BDT 50 and for prepaid connection is BDT 20 (except Teletalk).</li>
+                        <li>Maximum recharge amount for postpaid connection is BDT 10,000 and for prepaid connection is BDT 1,000.</li>
+                        <li> prepaid recharge is available for Teletalk numbers and the minimum recharge amount is BDT 10.</li>
+                        <li>Consecutive recharge to the same number requires an interval of 10 minutes.</li>
+                        <li>If your recharge amount is equivalent to any trigger/bundle pack amount, a data/minute/bundle pack might be activated on your number. City Bank only provides the payment service here. Please contact your mobile operator to know more.</li>
+                        <li>Mobile Recharge service is not available for Grameenphone-skitto numbers.</li>
+                        <li>Please input the mobile number carefully and recheck before confirming. The City Bank Limited will not be liable if mobile recharge of an unintended recipient is done due to wrong input by the customer.</li>
+                                    </ol>
+                                    </strong>
                         </div>
                     </div>
                 </div>
