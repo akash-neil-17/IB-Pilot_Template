@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilot Project/Settings</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/Citi-Logo-White.png" type="image/x-icon">
+    <style>
+        .breadcrumb {
+            --bs-breadcrumb-divider-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container shadow p-3 mb-5 bg-body-tertiary rounded"
+        style="background-color: white; min-height: 60vh; font-size: small;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <img src="../img/main_logo.jpg" class="img-fluid" alt="Logo" style="width: 100%; height: 18vh;">
+                </div>
+                <div class="col-9" style="background-image: url(../img/digital-banking.jpg);height: 18vh;">
+                    <nav style="--bs-breadcrumb-divider: '|'; color: white;" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item" aria-current="page"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">About Us</a></li>
+                            <li class="breadcrumb-item"><a href="#">Contact Us</a></li>
+                            <li class="breadcrumb-item"><a href="#">Locate Us</a></li>
+                            <li class="breadcrumb-item"><a href="login.html">Logout</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <!-- Navigation Bar -->
+            <div class="row">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav m-auto">
+                            <a class="nav-link" aria-current="page" href="myAccounts.html">My Accounts</a>
+                            <a class="nav-link" href="favorites.html">Favorites</a>
+                            <a class="nav-link" href="beneficiary.html">Beneficiary</a>
+                            <a class="nav-link" href="fundTransfer.html">Fund Transfer</a>
+                            <a class="nav-link active" href="mobileRecharge.html">Mobile Recharge</a>
+                            <a class="nav-link" href="utilityBill.html">Utility Bill</a>
+                            <a class="nav-link" href="payments.html">Payments</a>
+                            <a class="nav-link" href="accountServices.html">Account Services</a>
+                            <a class="nav-link" href="cardService.html">Card Services</a>
+                            <a class="nav-link" href="loan.html">Loan/Finance Services</a>
+                            <a class="nav-link" href="settings.html">Settings</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <hr>
+            <!-- Section -->
+            <div class="container-fluid bg-body-tertiary rounded">
+                <!-- Greeting User and Login Time display -->
+                <div class="row">
+                    <!-- Greeting User -->
+                    <div class="col-3">
+                        <p>Welcome, User</p>
+                    </div>
+                    <!-- Login Time -->
+                    <div class="col-9">
+                        <span id="currentTime" style="display: inline; float: inline-end;"></span>
+                        <p style="display: inline; float: inline-end;">Your last login time: &nbsp;</p>
+                    </div>
+                </div>
+                <!-- Animation -->
+                <div class="row">
+                    <!-- <p>Welcome User</p> -->
+                    <marquee behavior="scroll" direction="left" style="background-color: #CFE2FF; border-radius: 5px;">
+                        <strong>Welcome User</strong>
+                    </marquee>
+                </div>
+                <!-- SIDE BAR START -->
+                <div class="row bg-body-tertiary justify-content-center">
+                    <div class="col-lg-12 col-md-12 col-sm-12 mt-2">
+                        <div class="card">
+
+                            <div class="card-header justify-content-between">
+                                Mobile Recharge
+                            </div>
+
+                            <div class="card-body">
+                                <form>
+                                    <div class="row mb-3">
+                                        <label for="accountNumber" class="col-md-3 col-form-label">Operators<span style="color: red;"> *</span></label>
+                                        <div class="col-md-9">
+                                            <select class="form-select form-select-sm" id="accountNumber" required>
+                                                <option selected>Select Operator</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="phoneNumber" class="col-md-3 col-form-label">Phone Number<span style="color:red;">*</span></label>
+                                        <div class="col-md-9">
+                                          <input type="text" class="form-control form-control-sm" id="phoneNumber">
+                                        </div>
+                                    </div>
+                                    <fieldset class="row mb-3">
+                                        <legend class="col-form-label col-md-3 pt-0">OTP Type<span
+                                                style="color: red;"> *</span></legend>
+                                        <div class="col-md-7">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio"
+                                                    name="gridRadios" id="gridRadios1" value="option1"
+                                                    checked>
+                                                <label class="form-check-label" for="gridRadios1">
+                                                    Prepaid
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio"
+                                                    name="gridRadios" id="gridRadios2" value="option2">
+                                                <label class="form-check-label" for="gridRadios2">
+                                                    Postpaid
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </fieldset>
+                                   
+                                    <div class="row mb-3">
+                                        <label for="monthlyStatement" class="col-md-3 col-form-label">From Account <span style="color: red;">*</span></label>
+                                        <div class="col-md-9">
+                                            <select class="form-select form-select-sm" id="monthlyStatement" required>
+                                                <option selected>Select Account/Card</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <fieldset class="row mb-3">
+                                        <legend class="col-form-label col-md-3 pt-0">OTP Type<span style="color: red;"> *</span></legend>
+                                        <div class="col-md-9">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="gridRadios1">
+                                                SMS
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                <label class="form-check-label" for="gridRadios2">
+                                                Email
+                                                </label>
+                                            </div>
+                                            
+                                        </div>
+                                    </fieldset>
+                                    <div class="row mb-3">
+                                        <label for="availableBlance" class="col-sm-3 col-form-label">
+                                            Available Balance<span style="color: red;"">* </spand></label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="availableBlance"
+                                                    placeholder="0.00">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 text-center">
+                                    <div class="col-sm-6 ">
+                                    <button type="button" class="btn btn-primary ">20</button>
+                                    <button type="button" class="btn btn-primary ">50</button>
+                                    <button type="button" class="btn btn-primary ">100</button>
+                                    <button type="button" class="btn btn-primary ">500</button>
+                                </div>
+                                </div>
+                                    <div class="row mb-3">
+                                        <label for="totalAmount" class="col-sm-3 col-form-label">
+                                            Total Amount<span style="color: red;">*</span></label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="totalAmount"
+                                                    placeholder="0.00">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="serviceCharge" class="col-sm-3 col-form-label">
+                                            Service Charge @ 0.0%</label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="serviceCharge"
+                                                    placeholder="0.00">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="grandTotal" class="col-sm-3 col-form-label">
+                                            Grand Total Amount</label>
+                                        <div class="col-sm-7">
+                                            <fieldset disabled>
+                                                <input type="text" class="form-control" id="grandTotal"
+                                                    placeholder="0.00">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                                    </div>
+                                </form>
+                        </div>
+                        <div class="bg-body-tertiary justify-content-between">
+
+
+                            <strong>
+
+                                <div>Note:</div>
+                                <br>
+                                <ol>
+                        <li>Minimum recharge amount for postpaid connection is BDT 50 and for prepaid connection is BDT 20 (except Teletalk).</li>
+                        <li>Maximum recharge amount for postpaid connection is BDT 10,000 and for prepaid connection is BDT 1,000.</li>
+                        <li> prepaid recharge is available for Teletalk numbers and the minimum recharge amount is BDT 10.</li>
+                        <li>Consecutive recharge to the same number requires an interval of 10 minutes.</li>
+                        <li>If your recharge amount is equivalent to any trigger/bundle pack amount, a data/minute/bundle pack might be activated on your number. City Bank only provides the payment service here. Please contact your mobile operator to know more.</li>
+                        <li>Mobile Recharge service is not available for Grameenphone-skitto numbers.</li>
+                        <li>Please input the mobile number carefully and recheck before confirming. The City Bank Limited will not be liable if mobile recharge of an unintended recipient is done due to wrong input by the customer.</li>
+                                    </ol>
+                                    </strong>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+        <!-- SIDE BAR END -->
+
+
+        <!-- MAIN VIEW ENDS -->
+        <hr>
+        <!-- Footer -->
+        <div class="row text-center" style="color: black;">
+            <footer>
+                <p>&copy; Sonali Intellect Limited</p>
+            </footer>
+        </div>
+    </div>
+</body>
+<!-- Bootstrap JS -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Font Awesome JS -->
+<script src="../js/all.min.js"></script>
+<script>
+    // Function to update the text box with the current time
+    function updateCurrentTime() {
+        var currentDate = new Date();
+        var hours = currentDate.getHours();
+        var minutes = currentDate.getMinutes();
+        var seconds = currentDate.getSeconds();
+        var formattedTime = padZero(hours) + ":" + padZero(minutes) + ":" + padZero(seconds);
+        document.getElementById("currentTime").innerHTML = formattedTime;
+    }
+
+    // Function to pad a single digit number with a leading zero
+    function padZero(number) {
+        return number < 10 ? "0" + number : number;
+    }
+
+    // Update the current time initially
+    updateCurrentTime();
+
+    // Update the current time every second (1000 milliseconds)
+    setInterval(updateCurrentTime, 1000);
+</script>
+
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilot Project/Settings</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/Citi-Logo-White.png" type="image/x-icon">
+    <style>
+        .breadcrumb {
+            --bs-breadcrumb-divider-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container shadow p-3 mb-5 bg-body-tertiary rounded"
+        style="background-color: white; min-height: 60vh; font-size: small;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <img src="../img/main_logo.jpg" class="img-fluid" alt="Logo" style="width: 100%; height: 18vh;">
+                </div>
+                <div class="col-9" style="background-image: url(../img/digital-banking.jpg);height: 18vh;">
+                    <nav style="--bs-breadcrumb-divider: '|'; color: white;" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item" aria-current="page"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">About Us</a></li>
+                            <li class="breadcrumb-item"><a href="#">Contact Us</a></li>
+                            <li class="breadcrumb-item"><a href="#">Locate Us</a></li>
+                            <li class="breadcrumb-item"><a href="login.html">Logout</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <!-- Navigation Bar -->
+            <div class="row">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav m-auto">
+                            <a class="nav-link" aria-current="page" href="myAccounts.html">My Accounts</a>
+                            <a class="nav-link" href="favorites.html">Favorites</a>
+                            <a class="nav-link" href="beneficiary.html">Beneficiary</a>
+                            <a class="nav-link" href="fundTransfer.html">Fund Transfer</a>
+                            <a class="nav-link" href="mobileRecharge.html">Mobile Recharge</a>
+                            <a class="nav-link" href="utilityBill.html">Utility Bill</a>
+                            <a class="nav-link active" href="payments.html">Payments</a>
+                            <a class="nav-link" href="accountServices.html">Account Services</a>
+                            <a class="nav-link" href="cardService.html">Card Services</a>
+                            <a class="nav-link" href="loan.html">Loan/Finance Services</a>
+                            <a class="nav-link" href="settings.html">Settings</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <hr>
+            <!-- Section -->
+            <div class="container-fluid bg-body-tertiary rounded">
+                <!-- Greeting User and Login Time display -->
+                <div class="row">
+                    <!-- Greeting User -->
+                    <div class="col-3">
+                        <p>Welcome, User</p>
+                    </div>
+                    <!-- Login Time -->
+                    <div class="col-9">
+                        <span id="currentTime" style="display: inline; float: inline-end;"></span>
+                        <p style="display: inline; float: inline-end;">Your last login time: &nbsp;</p>
+                    </div>
+                </div>
+                <!-- Animation -->
+                <div class="row">
+                    <!-- <p>Welcome User</p> -->
+                    <marquee behavior="scroll" direction="left" style="background-color: #CFE2FF; border-radius: 5px;">
+                        <strong>Welcome User</strong>
+                    </marquee>
+                </div>
+                <!-- SIDE BAR START -->
+                <div class="row bg-body-tertiary">
+                    <div class="col-lg-3 col-md-12 col-sm-12 mt-2">
+                        <div class="card">
+
+                            <div class="card-header">
+                                Laon/ Finance
+                            </div>
+                            <div class="card-body">
+                                <div class="list-group" id="list-tab" role="tablist">
+                                    <a class="list-group-item list-group-item-action active"
+                                        id="list-creditCardPaymentOwn-list" data-bs-toggle="list"
+                                        href="#list-creditCardPaymentOwn" role="tab"
+                                        aria-controls="list-creditCardPaymentOwn">Credit Card Payment (Own)</a>
+                                    <a class="list-group-item list-group-item-action"
+                                        id="list-creditCardPaymentOther-list" data-bs-toggle="list"
+                                        href="#list-creditCardPaymentOther" role="tab"
+                                        aria-controls="list-creditCardPaymentOther">Credit Card Payment (other)</a>
+                                    <a class="list-group-item list-group-item-action" id="list-clubBillPayment-list"
+                                        data-bs-toggle="list" href="#list-clubBillPayment" role="tab"
+                                        aria-controls="list-clubBillPayment">Club Bill Payment</a>
+                                    <a class="list-group-item list-group-item-action"
+                                        id="list-insurancePremiumPayment-list" data-bs-toggle="list"
+                                        href="#list-insurancePremiumPayment" role="tab"
+                                        aria-controls="list-insurancePremiumPayment">Insurance Premium Payment</a>
+                                    <a class="list-group-item list-group-item-action" id="list-internetBillPayment-list"
+                                        data-bs-toggle="list" href="#list-internetBillPayment" role="tab"
+                                        aria-controls="list-internetBillPayment">Internet Bill Payment</a>
+                                    <a class="list-group-item list-group-item-action" id="list-tutionFeePayment-list"
+                                        data-bs-toggle="list" href="#list-tutionFeePayment" role="tab"
+                                        aria-controls="list-tutionFeePayment">Tuition Fee Payment</a>
+                                    <a class="list-group-item list-group-item-action" id="list-visaInstantPayment-list"
+                                        data-bs-toggle="list" href="#list-visaInstantPayment" role="tab"
+                                        aria-controls="list-visaInstantPayment">Visa Instant Payment</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SIDE BAR END -->
+                    <!-- MAIN VIEW STAT UPON SELECTION -->
+                    <div class="col-lg-9 col-md-12 col-sm-12 mt-2">
+                        <div class="tab-content" id="nav-tabContent">
+                            <!-- Credit Card Payment Own -->
+                            <div class="tab-pane fade show active" id="list-creditCardPaymentOwn" role="tabpanel"
+                                aria-labelledby="list-creditCardPaymentOwn-list">
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        Credit Card Payment (Own)
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="payementDetails-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#payementDetails-tab-pane"
+                                                    type="button" role="tab" aria-controls="payementDetails-tab-pane"
+                                                    aria-selected="true">Payement Details (Step1)</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="confrimDetails-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#confrimDetails-tab-pane" type="button" role="tab"
+                                                    aria-controls="confrimDetails-tab-pane"
+                                                    aria-selected="false">Confrim Details (Step2)</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="thankYou-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#thankYou-tab-pane" type="button" role="tab"
+                                                    aria-controls="thankYou-tab-pane" aria-selected="false">Thank You
+                                                    (Step3)</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <!-- Payment Deatails BEGIN -->
+                                            <div class="tab-pane fade show active p-4" id="payementDetails-tab-pane"
+                                                role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                                <form>
+                                                    <div class="row mb-3">
+                                                        <label for="accountNumber"
+                                                            class="col-md-3 col-form-label">Credit Card
+                                                            <span style="color: red;"> *</span></label>
+                                                        <div class="col-md-7">
+                                                            <select class="form-select form-select-sm"
+                                                                id="accountNumber" required>
+                                                                <option selected>Select </option>
+                                                                <option value="1">Option 1</option>
+                                                                <option value="2">Option 2</option>
+                                                                <option value="3">Option 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mb-3">
+                                                        <label for="lastOutstanding" class="col-sm-3 col-form-label">
+                                                            Last Statement Outstanding </label>
+                                                        <div class="col-sm-7">
+                                                            <fieldset disabled>
+                                                                <input type="text" class="form-control"
+                                                                    id="lastOutstanding" placeholder="0.00">
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label for="minPayment" class="col-sm-3 col-form-label">
+                                                            Minimum Payment Due</label>
+                                                        <div class="col-sm-7">
+                                                            <fieldset disabled>
+                                                                <input type="text" class="form-control" id="minPayment"
+                                                                    placeholder="0.00">
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label for="accountNumber" class="col-md-3 col-form-label">From
+                                                            Account
+                                                            <span style="color: red;"> *</span></label>
+                                                        <div class="col-md-7">
+                                                            <select class="form-select form-select-sm"
+                                                                id="accountNumber" required>
+                                                                <option selected>Select Account</option>
+                                                                <option value="1">Option 1</option>
+                                                                <option value="2">Option 2</option>
+                                                                <option value="3">Option 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label for="paymentAmount" class="col-sm-3 col-form-label">
+                                                            Payment Amount<span style="color: red;"> *</span> </label>
+                                                        <div class="col-sm-7">
+
+                                                            <input type="text" class="form-control" id="paymentAmount"
+                                                                placeholder="0.00">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label for="serviceCharge" class="col-sm-3 col-form-label">
+                                                            Service Charge @ 0.0%</label>
+                                                        <div class="col-sm-7">
+                                                            <fieldset disabled>
+                                                                <input type="text" class="form-control"
+                                                                    id="serviceCharge" placeholder="0.00">
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label for="vat" class="col-sm-3 col-form-label">VAT @
+                                                            0.0%</label>
+                                                        <div class="col-sm-7">
+                                                            <fieldset disabled>
+                                                                <input type="text" class="form-control" id="vat"
+                                                                    placeholder="0.00">
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label for="grandTotal" class="col-sm-3 col-form-label">
+                                                            Grand Total Amount</label>
+                                                        <div class="col-sm-7">
+                                                            <fieldset disabled>
+                                                                <input type="text" class="form-control" id="grandTotal"
+                                                                    placeholder="0.00">
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label for="paymentNar" class="col-sm-3 col-form-label">
+                                                            Payment Narration </label>
+                                                        <div class="col-sm-7">
+
+                                                            <input type="text" class="form-control" id="paymentNar"
+                                                                placeholder="0.00">
+
+                                                        </div>
+                                                    </div>
+                                                    <fieldset class="row mb-3">
+                                                        <legend class="col-form-label col-md-3 pt-0">OTP Type<span
+                                                                style="color: red;"> *</span></legend>
+                                                        <div class="col-md-7">
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="gridRadios" id="gridRadios1" value="option1"
+                                                                    checked>
+                                                                <label class="form-check-label" for="gridRadios1">
+                                                                    SMS
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="gridRadios" id="gridRadios2" value="option2">
+                                                                <label class="form-check-label" for="gridRadios2">
+                                                                    Email
+                                                                </label>
+                                                            </div>
+
+                                                        </div>
+                                                    </fieldset>
+                                                </form>
+                                                <div class="text-center">
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                    <button type="reset" class="btn btn-primary">Reset</button>
+                                                </div>
+                                                <div>
+                                                    <span style="color: red;">* </span> <span>Marked fields are
+                                                        mandatory</span>
+                                                </div>
+                                                <div class="bg-body-tertiary justify-content-between">
+
+
+                                                    <strong>
+
+                                                        <div>Note:</div>
+                                                        <br>
+                                                        <ol>
+                                                            <li>This service is not applicable for Supplementary Card.
+                                                            </li>
+                                                            <li>If you select Stolen or Lost option your card will be
+                                                                permanently
+                                                                deactivated.</li>
+                                                            <li>Use Restricted option for temporarily blocking the card.
+                                                            </li>
+                                                            <li>Call 16234 for a replacement request or to reactivate
+                                                                the card.</li>
+                                                            <li>Please do not activate a new/reissued card before
+                                                                receiving the card
+                                                                physically.</li>
+                                                        </ol>
+                                                    </strong>
+
+                                                </div>
+
+                                            </div>
+                                            <!-- Payemtn Deatails END -->
+                                            <div class="tab-pane fade" id="confrimDetails-tab" role="tabpanel"
+                                                aria-labelledby="confrimDetails-tab-tab" tabindex="1">
+                                                <h1> CONFRIMATION</h1>
+                                            </div>
+                                            <div class="tab-pane fade" id="thankYou-tab" role="tabpanel"
+                                                aria-labelledby="thankYou-tab-tab" tabindex="0">
+                                                <h1>THANK YOU</h1>
+                                            </div>
+                                            
+                                        </div>
+
+
+                                    </div>
+
+                                   
+                                    <div class="tab-pane fade" id="list-creditCardPaymentOther" role="tabpanel"
+                                        aria-labelledby="list-s-list">
+                                        <h1>Credit Card Payment (other)</h1>
+                                    </div>
+
+
+
+                                   
+                                    <div class="tab-pane fade" id="list-otp-lock-unlock" role="tabpanel"
+                                        aria-labelledby="list-otp-lock-unlock-list">
+
+
+                                    </div>
+                                    
+                                    <div class="tab-pane fade" id="list-change-login-password" role="tabpanel"
+                                        aria-labelledby="list-change-login-password-list">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MAIN VIEW ENDS -->
+                    <hr>
+
+                    <!-- Footer -->
+                    <div class="row text-center" style="color: black;">
+                        <footer>
+                            <p>&copy; Sonali Intellect Limited</p>
+                        </footer>
+                    </div>
+                </div>
+
+</body>
+<!-- Bootstrap JS -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Font Awesome JS -->
+<script src="../js/all.min.js"></script>
+<script>
+    // Function to update the text box with the current time
+    function updateCurrentTime() {
+        var currentDate = new Date();
+        var hours = currentDate.getHours();
+        var minutes = currentDate.getMinutes();
+        var seconds = currentDate.getSeconds();
+        var formattedTime = padZero(hours) + ":" + padZero(minutes) + ":" + padZero(seconds);
+        document.getElementById("currentTime").innerHTML = formattedTime;
+    }
+
+    // Function to pad a single digit number with a leading zero
+    function padZero(number) {
+        return number < 10 ? "0" + number : number;
+    }
+
+    // Update the current time initially
+    updateCurrentTime();
+
+    // Update the current time every second (1000 milliseconds)
+    setInterval(updateCurrentTime, 1000);
+</script>
+
+</html>
