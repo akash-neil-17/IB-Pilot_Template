@@ -1,0 +1,100 @@
+.login-container{
+    font-family: 'Poppins';
+    height: 100vh;
+    overflow-y: hidden;
+}
+h3{
+    font-weight: 900;
+}
+.image-container{
+    background-image: url(../img/skyscraper2.png);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.logo-container{
+    margin-top: 78px;
+    
+}
+.image-container .logo-container img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+}
+.image-container .breadcrumb{
+    --bs-breadcrumb-divider-color: white;
+}
+.slogan-container{
+    margin-top: 20px;
+    font-size: x-large;
+    font-weight: 500;
+    color: white;
+}
+.shortcut-links{
+    margin-top: 50%;
+    font-size: medium;
+    font-weight: 500;
+}
+.shortcut-links a{
+    color: white;
+}
+
+.language-selection ol{
+    justify-content: end;
+    margin-top: 5%;
+    margin-right: 5%;
+    font-size: large;
+    font-weight: 500;
+}
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84%;
+    width: 100%;
+    font-size: medium;
+}
+.login-form a, a{
+    color: black;
+}
+.login-form a, .active a, .active{
+    color: green;
+}
+.form-check-input:checked {
+    background-color: green;
+    border-color: green;
+}
+.forget-account, .forgetPassword{
+    font-size: small;
+}
+.rememberUser{
+    font-size: small;
+}
+/* Media query to hide the image on small screens */
+@media screen and (max-width: 600px) {
+
+    .image-container {
+        display: none;
+    }
+    .image-container .logo-container img{
+        display: block !important;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        height: 150px;
+    }
+    .login-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+}

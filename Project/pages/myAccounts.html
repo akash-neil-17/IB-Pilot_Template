@@ -113,26 +113,26 @@
                                     </h2>
                                     <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                                         <div class="accordion-body table-responsive">
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">Account Number</th>
-                                                        <th scope="col">Account Type</th>
-                                                        <th scope="col">Available Balance</th>
-                                                        <th scope="col">Ledger Balance</th>
-                                                        <th scope="col">Currency</th>
-                                                        <th scope="col">Status</th>
-                                                    </tr>
-                                                </thead>
+                                            <table class="table table-hover" id="data-table">
+                                                <tr>
+                                                    <th scope="col">Account Number</th>
+                                                    <th scope="col">Account Type</th>
+                                                    <th scope="col">Available Balance</th>
+                                                    <th scope="col">Ledger Balance</th>
+                                                    <th scope="col">Currency</th>
+                                                    <th scope="col">Status</th>
+                                                </tr>
                                                 <tbody>
-                                                    <tr>
-                                                        <td scope="row">1</td>
-                                                        <td>General Savings</td>
-                                                        <td>0.00</td>
-                                                        <td>0.00</td>
-                                                        <td>BDT</td>
-                                                        <td>Active</td>                                                    
-                                                    </tr>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td scope="row">1</td>
+                                                            <td>General Savings</td>
+                                                            <td>0.00</td>
+                                                            <td>0.00</td>
+                                                            <td>BDT</td>
+                                                            <td>Active</td>
+                                                        </tr>
+                                                    </tbody>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -308,20 +308,22 @@
 <script src="../js/bootstrap.min.js"></script>
 <!-- Font Awesome JS -->
 <script src="../js/all.min.js"></script>
+<!-- jQuery -->
+<script src="../js/jquery-3.7.1.min.js"></script>
 <script>
     // Function to update the text box with the current time
     function updateCurrentTime() {
-    var currentDate = new Date();
-    var hours = currentDate.getHours();
-    var minutes = currentDate.getMinutes();
-    var seconds = currentDate.getSeconds();
-    var formattedTime = padZero(hours) + ":" + padZero(minutes) + ":" + padZero(seconds);
-    document.getElementById("currentTime").innerHTML = formattedTime;
-}
+        var currentDate = new Date();
+        var hours = currentDate.getHours();
+        var minutes = currentDate.getMinutes();
+        var seconds = currentDate.getSeconds();
+        var formattedTime = padZero(hours) + ":" + padZero(minutes) + ":" + padZero(seconds);
+        document.getElementById("currentTime").innerHTML = formattedTime;
+    }
 
     // Function to pad a single digit number with a leading zero
     function padZero(number) {
-    return number < 10 ? "0" + number : number;
+        return number < 10 ? "0" + number : number;
     }
 
     // Update the current time initially
