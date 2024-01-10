@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Sidebar 1</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../icon/iconsax-css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container-fluid p-0 d-flex h-100 ">
+        <div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3 text-black offcanvas-md offcanvas-start overflow-scroll"
+            style="width: 280px;">
+            <a href="#" class="navbar-brand">
+                <div class="text-center">
+                    <img src="../img/rupali-logo.png" alt="Rupali Bank Logo" id="navLogo">
+                </div>
+            </a>
+
+            <ul class="mynav nav nav-pills flex-column mb-auto mt-5">
+                <li class="nav-item mb-1">
+                    <a href="#" class="active">
+                        <!-- <i class="isax-smart-home2"></i> -->
+                        My Account
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#" class="">
+                        <!-- <i class="isax-empty-wallet-change"></i> -->
+                        Payment
+
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#" class="">
+                        <!-- <i class="isax-profile-2user"></i> -->
+                        Fund Transfer
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#" class="">
+                        <!-- <i class="fa-solid fa-star"></i> -->
+                        Beneficiary
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#" class="">
+                        <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+                        Mobilr Recharge
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#" class="">
+                        <!-- <i class="fa-solid fa-user"></i> -->
+                        Utility Bill
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#" class="">
+                        <!-- <i class="fa-solid fa-user"></i> -->
+                        Account Services
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#" class="">
+                        <!-- <i class="fa-solid fa-user"></i> -->
+                        Card Services
+                    </a>
+                </li>
+            </ul>
+            
+            <div >
+                <ul class="mynav nav nav-pills flex-column mb-auto mt-5">
+                    <li class="nav-item mb-1">
+                        <a href="#" class="">
+                            <!-- <i class="isax-smart-home2"></i> -->
+                           Settings
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="#" class="">
+                            <!-- <i class="isax-empty-wallet-change"></i> -->
+                            Logout
+    
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                    
+                        <div style="display: inline; float: inline-end;">Your last login time: &nbsp;
+                        
+                        <span id="currentTime" style="display: inline; float: inline-end;"></span>
+                        </div>
+
+                    </li>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="bg-light flex-fill overflow-scroll">
+            <div class="p-2 d-md-none d-flex text-white bg-dark ">
+                <a href="#" class="text-white" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <span class="ms-3">INTERNET BANKING</span>
+            </div>
+            <div class="p-4">
+                <!-- <nav style="--bs-breadcrumb-divider:'>';font-size:14px">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><i class="fa-solid fa-house"></i></li>
+                        <li class="breadcrumb-item">Dashboard</li>
+                        <li class="breadcrumb-item">Orders</li>
+                    </ol>
+                </nav> -->
+                <!-- <div class="d-flex justify-content-between">
+                    <h5>Orders</h5>
+                    <button class="btn btn-sm btn-light"><i class="fa-solid fa-download"></i> Download</button>
+                </div> -->
+                <hr>
+                <!-- <div class="row">
+                    <div class="col">
+                        <p>Page content goes here</p>
+                    </div>
+                </div> -->
+                
+                    <div class="row">
+    
+                        <nav class="nav nav-pills nav-fill" style="background-color: #2E9DDC;">
+                            <a class="nav-link" href="#" style="text-decoration: black;">About Us</a>
+                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="#">Locate Us</a>
+                            <a class="nav-link" href="login.html">Logout</a>
+                          </nav>
+                        
+                    </div>
+                    <div class="row shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+                        <ul class="nav nav-pills nav-fill">
+                            <li class="nav-item">
+                                <a class="list-group-item list-group-item-action active" id="list-bank-account-list"
+                                    data-bs-toggle="list" href="#list-bank-account" role="tab"
+                                    aria-controls="list-bank-account">Bank Account</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="list-group-item list-group-item-action" id="list-loan-finance-list"
+                                    data-bs-toggle="list" href="#list-loan-finance" role="tab"
+                                    aria-controls="list-loan-finance">Loan/Finance</a>
+    
+                            </li>
+                            <li class="nav-item">
+                                <a class="list-group-item list-group-item-action" id="list-term-deposit-list"
+                                    data-bs-toggle="list" href="#list-term-deposit" role="tab"
+                                    aria-controls="list-term-deposit">Term Deposit</a>
+    
+                            </li>
+                            <li class="nav-item">
+                                <a class="list-group-item list-group-item-action" id="list-tag-account-list"
+                                    data-bs-toggle="list" href="#list-tag-account" role="tab"
+                                    aria-controls="list-tag-account">Tag Account</a>
+    
+                            </li>
+                            <li class="nav-item">
+                                <a class="list-group-item list-group-item-action" id="list-untag-account-list"
+                                    data-bs-toggle="list" href="#list-untag-account" role="tab"
+                                    aria-controls="list-untag-account">Untag Account</a>
+    
+                            </li>
+    
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <!-- Sidebar -->
+                        <div class="col-3">
+                            <div class="card shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="border: none;">
+                                
+                                    <div class="d-flex justify-content-center container text-white mt-5">
+                                        <div class="card p-2 px-3 py-3">
+                                            <div class="d-flex justify-content-between align-items-center"><img src="https://i.imgur.com/8ANWXql.png" width="20" height="20"><img src="https://i.imgur.com/SsTSozr.png" width="40"></div>
+                                            <div class="mt-3"><span class="mr-3">****</span><span class="mr-3">****</span><span class="mr-3">****</span><span class="mr-2">5513</span></div>
+                                            <div class="d-flex justify-content-between card-details mt-3 mb-3">
+                                                <div class="d-flex flex-column"><span class="light">Card Holder</span><span>Sam Dingo</span></div>
+                                                <div class="d-flex flex-row">
+                                                    <div class="d-flex flex-column mr-3"><span class="light">Expired</span><span>12/24</span></div>
+                                                    <div class="d-flex flex-column"><span class="light">CVV</span><span>857</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        <!-- Dashboard -->
+                        <div class="col-lg-9 col-md-12 col-sm-12 mt-2 tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-bank-account" role="tabpanel"
+                                aria-labelledby="list-bank-account-list">
+                                <h1>BANK ACCOUNT</h1>
+                                <div class="row row-cols-1 row-cols-md-3 g-4">
+                                    <div class="col">
+                                      <div class="card h-100">
+        
+                                        <div class="card-body">
+                                            <div>
+                                            <p class="card-text fs-5 text-center">Open Date</p>
+                                        </div>
+                                          <div>
+                                          <p class="card-text fs-1 text-center">1 Jan 2018</p>
+                                        </div>
+                                        </div>
+                                        <div class="card-footer">
+                                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card h-100">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card h-100">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>    
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+<!-- Bootstrap JS -->
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    // Function to update the text box with the current time
+    function updateCurrentTime() {
+    var currentDate = new Date();
+    var hours = currentDate.getHours();
+    var minutes = currentDate.getMinutes();
+    var seconds = currentDate.getSeconds();
+    var formattedTime = padZero(hours) + ":" + padZero(minutes) + ":" + padZero(seconds);
+    document.getElementById("currentTime").innerHTML = formattedTime;
+    }
+
+    // Function to pad a single digit number with a leading zero
+    function padZero(number) {
+    return number < 10 ? "0" + number : number;
+    }
+
+    // Update the current time initially
+    updateCurrentTime();
+
+    // Update the current time every second (1000 milliseconds)
+    setInterval(updateCurrentTime, 1000);
+</script>
+</html>
