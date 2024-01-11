@@ -19,7 +19,8 @@
 <body>
 
     <div class="container-fluid p-0 d-flex h-100 ">
-        <div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3 text-black offcanvas-md offcanvas-start overflow-scroll"
+        <div id="bdSidebar"
+            class="d-flex flex-column flex-shrink-0 p-3 text-black offcanvas-md offcanvas-start overflow-scroll"
             style="width: 280px;">
             <a href="#" class="navbar-brand">
                 <div class="text-center">
@@ -78,31 +79,31 @@
                     </a>
                 </li>
             </ul>
-            
-            <div >
+
+            <div>
                 <ul class="mynav nav nav-pills flex-column mb-auto mt-5">
                     <li class="nav-item mb-1">
                         <a href="#" class="">
                             <!-- <i class="isax-smart-home2"></i> -->
-                           Settings
+                            Settings
                         </a>
                     </li>
                     <li class="nav-item mb-1">
                         <a href="#" class="">
                             <!-- <i class="isax-empty-wallet-change"></i> -->
                             Logout
-    
+
                         </a>
                     </li>
                     <li class="nav-item mb-1">
-                    
+
                         <div style="display: inline; float: inline-end;">Your last login time: &nbsp;
-                        
-                        <span id="currentTime" style="display: inline; float: inline-end;"></span>
+
+                            <span id="currentTime" style="display: inline; float: inline-end;"></span>
                         </div>
 
                     </li>
-                    </ul>
+                </ul>
             </div>
         </div>
 
@@ -113,143 +114,114 @@
                 </a>
                 <span class="ms-3">INTERNET BANKING</span>
             </div>
-            <div class="p-4">
-                <!-- <nav style="--bs-breadcrumb-divider:'>';font-size:14px">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><i class="fa-solid fa-house"></i></li>
-                        <li class="breadcrumb-item">Dashboard</li>
-                        <li class="breadcrumb-item">Orders</li>
-                    </ol>
-                </nav> -->
-                <!-- <div class="d-flex justify-content-between">
-                    <h5>Orders</h5>
-                    <button class="btn btn-sm btn-light"><i class="fa-solid fa-download"></i> Download</button>
-                </div> -->
-                <hr>
-                <!-- <div class="row">
-                    <div class="col">
-                        <p>Page content goes here</p>
-                    </div>
-                </div> -->
-                
-                    <div class="row">
-    
-                        <nav class="nav nav-pills nav-fill" style="background-color: #2E9DDC;">
-                            <a class="nav-link" href="#" style="text-decoration: black;">About Us</a>
-                            <a class="nav-link" href="#">Contact Us</a>
-                            <a class="nav-link" href="#">Locate Us</a>
-                            <a class="nav-link" href="login.html">Logout</a>
-                          </nav>
-                        
-                    </div>
-                    <div class="row shadow-sm p-3 mb-5 bg-body-tertiary rounded">
-                        <ul class="nav nav-pills nav-fill">
-                            <li class="nav-item">
-                                <a class="list-group-item list-group-item-action active" id="list-bank-account-list"
-                                    data-bs-toggle="list" href="#list-bank-account" role="tab"
-                                    aria-controls="list-bank-account">Bank Account</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="list-group-item list-group-item-action" id="list-loan-finance-list"
-                                    data-bs-toggle="list" href="#list-loan-finance" role="tab"
-                                    aria-controls="list-loan-finance">Loan/Finance</a>
-    
-                            </li>
-                            <li class="nav-item">
-                                <a class="list-group-item list-group-item-action" id="list-term-deposit-list"
-                                    data-bs-toggle="list" href="#list-term-deposit" role="tab"
-                                    aria-controls="list-term-deposit">Term Deposit</a>
-    
-                            </li>
-                            <li class="nav-item">
-                                <a class="list-group-item list-group-item-action" id="list-tag-account-list"
-                                    data-bs-toggle="list" href="#list-tag-account" role="tab"
-                                    aria-controls="list-tag-account">Tag Account</a>
-    
-                            </li>
-                            <li class="nav-item">
-                                <a class="list-group-item list-group-item-action" id="list-untag-account-list"
-                                    data-bs-toggle="list" href="#list-untag-account" role="tab"
-                                    aria-controls="list-untag-account">Untag Account</a>
-    
-                            </li>
-    
-                        </ul>
-                    </div>
-                    <div class="row">
-                        <!-- Sidebar -->
-                        <div class="col-3">
-                            <div class="card shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="border: none;">
-                                
-                                    <div class="d-flex justify-content-center container text-white mt-5">
-                                        <div class="card p-2 px-3 py-3">
-                                            <div class="d-flex justify-content-between align-items-center"><img src="https://i.imgur.com/8ANWXql.png" width="20" height="20"><img src="https://i.imgur.com/SsTSozr.png" width="40"></div>
-                                            <div class="mt-3"><span class="mr-3">****</span><span class="mr-3">****</span><span class="mr-3">****</span><span class="mr-2">5513</span></div>
-                                            <div class="d-flex justify-content-between card-details mt-3 mb-3">
-                                                <div class="d-flex flex-column"><span class="light">Card Holder</span><span>Sam Dingo</span></div>
-                                                <div class="d-flex flex-row">
-                                                    <div class="d-flex flex-column mr-3"><span class="light">Expired</span><span>12/24</span></div>
-                                                    <div class="d-flex flex-column"><span class="light">CVV</span><span>857</span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                            </div>
-                        </div>
-                        <!-- Dashboard -->
-                        <div class="col-lg-9 col-md-12 col-sm-12 mt-2 tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="list-bank-account" role="tabpanel"
-                                aria-labelledby="list-bank-account-list">
-                                <h1>BANK ACCOUNT</h1>
-                                <div class="row row-cols-1 row-cols-md-3 g-4">
-                                    <div class="col">
-                                      <div class="card h-100">
-        
-                                        <div class="card-body">
-                                            <div>
-                                            <p class="card-text fs-5 text-center">Open Date</p>
-                                        </div>
-                                          <div>
-                                          <p class="card-text fs-1 text-center">1 Jan 2018</p>
-                                        </div>
-                                        </div>
-                                        <div class="card-footer">
-                                          <small class="text-body-secondary">Last updated 3 mins ago</small>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="col">
-                                      <div class="card h-100">
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Card title</h5>
-                                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                          <small class="text-body-secondary">Last updated 3 mins ago</small>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="col">
-                                      <div class="card h-100">
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Card title</h5>
-                                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                          <small class="text-body-secondary">Last updated 3 mins ago</small>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>    
-    
-                            </div>
-    
+            <div class="row container-fluid p-4 m-3 ">
+                <div class="list-group list-group-horizontal-sm" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-personalise-prof-list"
+                        data-bs-toggle="list" href="#list-personalise-prof" role="tab"
+                        aria-controls="list-personalise-prof"
+                        style="height: 56; width: 191; padding:16px, 30px, 16px, 30px; gap: 20px; border-radius: 6px;">Personalise
+                        Profile</a>
+                    <a class="list-group-item list-group-item-action" id="list-change-contact-details-list"
+                        data-bs-toggle="list" href="#list-change-contact-details" role="tab"
+                        aria-controls="list-change-contact-details"
+                        style=" height: 56; width: 191; padding:16px, 30px, 16px, 30px; gap: 20px; border-radius: 6px;">Change
+                        Contact Deatails</a>
+                    <a class="list-group-item list-group-item-action" id="list-otp-lock-unlock-list"
+                        data-bs-toggle="list" href="#list-otp-lock-unlock" role="tab"
+                        aria-controls="list-otp-lock-unlock"
+                        style="height: 56; width: 191; padding:16px, 30px, 16px, 30px; gap: 20px; border-radius: 6px;">OTP
+                        Lock/Unlock</a>
+                    <a class="list-group-item list-group-item-action" id="list-change-login-password-list"
+                        data-bs-toggle="list" href="#list-change-login-password" role="tab"
+                        aria-controls="list-change-login-password"
+                        style=" height: 56; width: 191; padding:16px, 30px, 16px, 30px; gap: 20px; border-radius: 6px;">Change
+                        Login Password</a>
+                </div>
+            </div>
+            <div class="row dashboard position-relative" >
+                <div class="col-lg-3 col-md-12 col-sm-12 mt-2 border ">
+                    <div class="card text-center mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
-                
+                    <div class="row">
+                        <h2>txt</h2>
+                    </div>
+                    <div class="row">
+                        <h2>txt2</h2>
+                    </div>
+
+
+                    <div class="bottom-0">
+                        <button type="button" class="btn btn-primary">
+                            <!-- style="background-color:rgba(46, 139, 87, 1); height: 60px; width: 300px;"> -->
+                            View Mini Statement</button>
+                    </div>
+
+                </div>
+                <div class="col-lg-9 col-md-12 col-sm-12 mt-2 border">
+                    <div class="row grid gap-0 row-gap-3 ">
+                        <!-- ROW CARD 1st -->
+                        <div class="row grid gap-0 column-gap-3 p-4 m-4">
+                            <!-- CARD 1 -->
+                            <div class="col-lg-3 col-md-12 col-sm-12 mt-2  border text-center m-2 p-2"
+                                style="background-color:rgba(46, 139, 87, 0.05);">
+                                <h5>Open Date</h5>
+                                <h2> 1 Jan 2018</h2>
+                            </div>
+                            <!-- CARD 2 -->
+                            <div class="col-lg-3 col-md-12 col-sm-12 mt-2 border text-center m-2 p-2"
+                                style="background-color:rgba(46, 139, 87, 0.05);">
+                                <h5>Open Date</h5>
+                                <h2> 1 Jan 2018</h2>
+                            </div>
+                            <!-- CARD3 -->
+                            <div class="col-lg-3 col-md-12 col-sm-12 mt-2  border text-center m-2 p-2"
+                                style="background-color:rgba(46, 139, 87, 0.05);">
+                                <h5>Open Date</h5>
+                                <h2> 1 Jan 2018</h2>
+                            </div>
+                        </div>
+                        <!-- ROW 2 -->
+                        <div class="row grid gap-0 column-gap-3 p-4 m-4">
+                            <!-- CARD 1 -->
+                            <div class="col-lg-3 col-md-12 col-sm-12 mt-2  border text-center m-2 p-2"
+                                style="background-color:rgba(46, 139, 87, 0.05);">
+                                <h5>Open Date</h5>
+                                <h2> 1 Jan 2018</h2>
+                            </div>
+                            <!-- CARD 2 -->
+                            <div class="col-lg-3 col-md-12 col-sm-12 mt-2  border text-center m-2 p-2"
+                                style="background-color:rgba(46, 139, 87, 0.05);">
+                                <h5>Open Date</h5>
+                                <h2> 1 Jan 2018</h2>
+                            </div>
+                            <!-- CARD3 -->
+                            <div class="col-lg-3 col-md-12 col-sm-12 mt-2  border text-center m-2 p-2"
+                                style="background-color:rgba(46, 139, 87, 0.05);">
+                                <h5>Open Date</h5>
+                                <h2> 1 Jan 2018</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AD IMAGES -->
+                    <div class="row align-text-bottom">
+                        <!-- BIG AD -->
+                        <div class="col-lg-9 col-md-12 col-sm-12 mt-2 ">
+                            <img src="../img/bigAD.png" alt="BIG AD">
+                        </div>
+                        <!-- SM AD -->
+                        <div class="col-lg-3 col-md-12 col-sm-12 mt-2 ">
+                            <img src="../img/smallAD.png" alt="SMALL AD">
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
 
         </div>
@@ -263,17 +235,17 @@
 <script>
     // Function to update the text box with the current time
     function updateCurrentTime() {
-    var currentDate = new Date();
-    var hours = currentDate.getHours();
-    var minutes = currentDate.getMinutes();
-    var seconds = currentDate.getSeconds();
-    var formattedTime = padZero(hours) + ":" + padZero(minutes) + ":" + padZero(seconds);
-    document.getElementById("currentTime").innerHTML = formattedTime;
+        var currentDate = new Date();
+        var hours = currentDate.getHours();
+        var minutes = currentDate.getMinutes();
+        var seconds = currentDate.getSeconds();
+        var formattedTime = padZero(hours) + ":" + padZero(minutes) + ":" + padZero(seconds);
+        document.getElementById("currentTime").innerHTML = formattedTime;
     }
 
     // Function to pad a single digit number with a leading zero
     function padZero(number) {
-    return number < 10 ? "0" + number : number;
+        return number < 10 ? "0" + number : number;
     }
 
     // Update the current time initially
@@ -282,4 +254,5 @@
     // Update the current time every second (1000 milliseconds)
     setInterval(updateCurrentTime, 1000);
 </script>
+
 </html>
