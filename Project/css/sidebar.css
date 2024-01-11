@@ -2,7 +2,13 @@ html,
 body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
+    
+
 }
+.dashboard{
+    height: 90vh;
+}
+
 
 #navLogo {
 
@@ -39,4 +45,13 @@ body {
 .mynav li a i {
     width: 25px;
     text-align: center;
+}
+
+#mainViewCard {
+    background-color: rgba(46, 139, 87, 0.05);
+    height: 125px;
+    width: 243px;
+    border-radius: 10px;
+    padding: 14px, 20px, 14px, 20px;
+    gap: 6px
 }
