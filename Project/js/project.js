@@ -16,12 +16,12 @@ $('#passwordReveal').on('click',function(){
     const type = $('#floatingPassword').attr('type') === 'password' ? 'text' : 'password';
     $('#floatingPassword').attr('type', type);
     if(type === 'password'){
-        $('.icon').removeClass("fa-eye");
-        $('.icon').addClass("fa-eye-slash");
+        $('.icon').removeClass("fa-regular fa-eye");
+        $('.icon').addClass("fa-regular fa-eye-slash");
     }
     else if (type === 'text'){
-        $('.icon').removeClass("fa-eye-slash");
-        $('.icon').addClass("fa-eye");
+        $('.icon').removeClass("fa-regular fa-eye-slash");
+        $('.icon').addClass("fa-regular fa-eye");
     }
 });
 

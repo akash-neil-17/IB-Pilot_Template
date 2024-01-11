@@ -51,23 +51,56 @@ h3{
     font-size: large;
     font-weight: 500;
 }
-.login-form{
+.login-form .logo-container img{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+}
+.form{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 84%;
+    margin-top: 10%;
+    /* align-items: center; */
+    height: 75%;
     width: 100%;
     font-size: medium;
 }
-.login-form a, a{
+.login-form .logo-container img{
+    display: none;
+}
+.wrapper{
+    position: relative;
+    width: 100%;
+}
+#floatingPassword{
+    width: 100%;
+}
+#passwordReveal{
+    height: 100%;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    right: 0;
+    opacity: 0.7;
+}
+.signIn{
+    padding: 10px 20px 10px 20px;
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.form a, a{
     color: black;
 }
-.login-form a, .active a, .active{
-    color: green;
+.form a, .active a, .active{
+    color: #2E8B57;
 }
 .form-check-input:checked {
-    background-color: green;
-    border-color: green;
+    background-color: #2E8B57;
+    border-color: #2E8B57;
 }
 .forget-account, .forgetPassword{
     font-size: small;
@@ -81,20 +114,33 @@ h3{
     .image-container {
         display: none;
     }
-    .image-container .logo-container img{
-        display: block !important;
-        margin-left: auto;
-        margin-right: auto;
-        width: 150px;
-        height: 150px;
+    .logo-container{
+        margin: 0;
+        padding: 0;
     }
-    .login-form{
+    .login-form .logo-container img{
+        display: block;
+        width: 100px;
+        height: 100px;
+    }
+    .language-selection ol{
+        margin-top: 5%;
+        margin-right: 5%;
+        font-size: medium;
+        font-weight: 500;
+    }
+    .form{
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0;
         padding: 0;
-        height: 100%;
+        height: 80%;
         width: 100%;
     }
+    .footer p{
+        font-size: x-small;
+        font-weight: 700;
+    }
+    
 }

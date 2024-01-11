@@ -48,7 +48,7 @@
                 
             </div>
             <!-- Login Form -->
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="col-lg-6 col-md-6 col-sm-12 login-form">
                 <!-- Select Language -->
                 <nav style="--bs-breadcrumb-divider: '.';" aria-label="breadcrumb" class="language-selection">
                     <ol class="breadcrumb">
@@ -56,13 +56,14 @@
                       <li class="breadcrumb-item" aria-current="page"><a href="#" class="text-decoration-none">বাংলা</a></li>
                     </ol>
                 </nav>
+                <div class="logo-container text-center mb-3">
+                    <img class="img-fluid" src="../img/rupali-logo.png" alt="Picture not Available">
+                </div>
                 <!-- Form -->
-                <div class="login-form">
+                <div class="form">
                     
                     <form action="#">
-                        <!-- <div class="logo-container">
-                            <img class="img-fluid" src="../img/rupali-logo.png" alt="Picture not Available">
-                        </div> -->
+                        
                         <div class="text-center">
                             <h3>SIGN IN</h3>
                         </div>
@@ -86,11 +87,14 @@
                             <label for="formGroupExampleInput2" class="form-label">Mobile Number</label>
                             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="+8801*********">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 wrapper">
                             <label for="floatingPassword" class="form-label">Password</label>
                             <div class="input-group">
                                 <input type="password" class="form-control" id="floatingPassword" placeholder="********">
-                                <button type="button" style="border: none;" id="passwordReveal"><i class="icon fa-solid fa-eye-slash"></i></button>
+                                <button type="button" id="passwordReveal">
+                                    <i class="icon fa-regular fa-eye-slash" ></i>
+                                    <!-- <img src="../img/eye-slash.svg" alt=""> -->
+                                </button>
                             </div>
                         </div>
                         <div class="virtualKeyboard mb-3">
@@ -105,18 +109,16 @@
                             <label>Forget <span><a href="#" class="text-decoration-none">Username, Password or PIN?</a></span></label>
                         </div>
                         <div class="text-center mb-3">
-                            <button class="btn btn-success" type="submit">SIGN IN</button>
+                            <button class="button signIn" type="submit">Sign In</button>
                         </div>
                         <div class="text-center forget-account">
                             <label>Do no have an account?&nbsp; &nbsp;<span><a href="#" class="text-decoration-none">Sign Up</a></span></label>
                         </div>
                     </form>
                 </div>
-                <div class="text-center">
+                <div class="text-center footer">
                     <footer>
-                        <strong>
-                            All rights reserved. Copyright &copy; 2024, SIL V 1.0.0.0
-                        </strong>
+                        <p>All rights reserved. Copyright &copy; 2024, SIL V 1.0.0.0</p>
                     </footer>
                 </div>
             </div>
@@ -129,4 +131,6 @@
 <script src="../js/all.min.js"></script>
 <!-- jQuery -->
 <script src="../js/jquery-3.7.1.min.js"></script>
+<!-- External JavaScript -->
+<script src="../js/project.js"></script>
 </html>
