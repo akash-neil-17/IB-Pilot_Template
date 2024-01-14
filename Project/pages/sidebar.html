@@ -11,7 +11,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/sidebar.css">
-    <link rel="stylesheet" href="../icon/iconsax-css/style.css">
+    <link href=" https://cdn.jsdelivr.net/npm/vuesax@3.12.2/dist/vuesax.min.css " rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
 
 </head>
@@ -30,14 +30,18 @@
 
             <ul class="mynav nav nav-pills flex-column mb-auto mt-5">
                 <li class="nav-item mb-1">
-                    <a href="#" class="active">
-                        <!-- <i class="isax-smart-home2"></i> -->
+                    <!-- <a href="#" class="active">
+                        <i src="../icon/home-2.svg"></i>
+                        My Account
+                    </a> -->
+                    <a href="#">
+                        <img src="../icon/home-2.svg">
                         My Account
                     </a>
                 </li>
                 <li class="nav-item mb-1">
                     <a href="#" class="">
-                        <!-- <i class="isax-empty-wallet-change"></i> -->
+                        <img src="../icon/wallet-check.svg">
                         Payment
 
                     </a>
@@ -45,35 +49,41 @@
                 <li class="nav-item mb-1">
                     <a href="#" class="">
                         <!-- <i class="isax-profile-2user"></i> -->
+                        <img src="../icon/empty-wallet-change.svg">
                         Fund Transfer
                     </a>
                 </li>
                 <li class="nav-item mb-1">
                     <a href="#" class="">
                         <!-- <i class="fa-solid fa-star"></i> -->
+                        <img src="../icon/profile-2user.svg">
                         Beneficiary
                     </a>
                 </li>
                 <li class="nav-item mb-1">
                     <a href="#" class="">
+                        <img src="../icon/mobile.svg">
                         <!-- <i class="fa-solid fa-cart-shopping"></i> -->
                         Mobilr Recharge
                     </a>
                 </li>
                 <li class="nav-item mb-1">
                     <a href="#" class="">
+                        <img src="../icon/receipt.svg">
                         <!-- <i class="fa-solid fa-user"></i> -->
                         Utility Bill
                     </a>
                 </li>
                 <li class="nav-item mb-1">
                     <a href="#" class="">
+                        <img src="../icon/empty-wallet.svg">
                         <!-- <i class="fa-solid fa-user"></i> -->
                         Account Services
                     </a>
                 </li>
                 <li class="nav-item mb-1">
                     <a href="#" class="">
+                        <img src="../icon/cards.svg">
                         <!-- <i class="fa-solid fa-user"></i> -->
                         Card Services
                     </a>
@@ -84,12 +94,14 @@
                 <ul class="mynav nav nav-pills flex-column mb-auto mt-5">
                     <li class="nav-item mb-1">
                         <a href="#" class="">
+                            <img src="../icon/setting-3.svg">
                             <!-- <i class="isax-smart-home2"></i> -->
                             Settings
                         </a>
                     </li>
                     <li class="nav-item mb-1">
                         <a href="#" class="">
+                            <img src="../icon/logout.svg">
                             <!-- <i class="isax-empty-wallet-change"></i> -->
                             Logout
 
@@ -110,11 +122,54 @@
         <div class="bg-light flex-fill overflow-scroll">
             <div class="p-2 d-md-none d-flex text-white bg-dark ">
                 <a href="#" class="text-white" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
-                    <i class="fa-solid fa-bars"></i>
+                    <img src="../icon/data-2.svg" style="background-color: aliceblue;">
                 </a>
                 <span class="ms-3">INTERNET BANKING</span>
             </div>
-            <div class="row container-fluid p-4 m-3 ">
+            <div class="row container-fluid p-4 m-3">
+                <div class="col-8">
+                    <div class="btn-group d-flex" role="group">
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:rgba(46, 157, 220, 0.05);border: none;"><span
+                                style="color: black;">About Us</span> </button>
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:rgba(46, 157, 220, 0.05);border: none;"><span
+                                style="color: black;">FAQs</span> </button>
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:rgba(46, 157, 220, 0.05);border: none;"><span
+                                style="color: black;">Locate Us</span> </button>
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:rgba(46, 157, 220, 0.05);border: none;"><span
+                                style="color: black;">Contact Us</span> </button>
+                        <ul class="mynav nav nav-pills flex-row">
+                            <li class="nav-item mb-1">
+                                <!-- <a href="#" class="active">
+                                        <i src="../icon/home-2.svg"></i>
+                                        My Account
+                                    </a> -->
+                                <a href="#">
+                                    <img src="../icon/sms-notification.svg">
+
+                                </a>
+                            </li>
+                            <li class="nav-item mb-1">
+                                <a href="#" class="">
+                                    <img src="../icon/notification.svg">
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="card col-lg-3 col-md-12 col-sm-12 mt-2 border text-center m-2 p-2"
+                    style="background-color:rgba(46, 139, 87, 0.05);">
+                    <h5>Open Date</h5>
+                    <h2> 1 Jan 2018</h2>
+                </div>
+            </div>
+            <div class="row container-fluid p-4 m-4 ">
                 <div class="list-group list-group-horizontal-sm" id="list-tab" role="tablist">
                     <a class="list-group-item list-group-item-action active" id="list-personalise-prof-list"
                         data-bs-toggle="list" href="#list-personalise-prof" role="tab"
@@ -136,88 +191,184 @@
                         aria-controls="list-change-login-password"
                         style=" height: 56; width: 191; padding:16px, 30px, 16px, 30px; gap: 20px; border-radius: 6px;">Change
                         Login Password</a>
+                    <a class="list-group-item list-group-item-action" id="list-change-login-password-list"
+                        data-bs-toggle="list" href="#list-change-login-password" role="tab"
+                        aria-controls="list-change-login-password"
+                        style=" height: 56; width: 191; padding:16px, 30px, 16px, 30px; gap: 20px; border-radius: 6px;">Change
+                        Cards</a>
+                    <a class="list-group-item list-group-item-action" id="list-change-login-password-list"
+                        data-bs-toggle="list" href="#list-change-login-password" role="tab"
+                        aria-controls="list-change-login-password"
+                        style=" height: 56; width: 191; padding:16px, 30px, 16px, 30px; gap: 20px; border-radius: 6px;">Change
+                        Tag Account</a>
                 </div>
             </div>
-            <div class="row dashboard position-relative" >
+            <div class="row dashboard position-relative">
+                <!--  Side View  -->
                 <div class="col-lg-3 col-md-12 col-sm-12 mt-2 border ">
                     <div class="card text-center mb-3">
                         <div class="card-body">
                             <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            <p class="card-text">With supporting text below as a natural lead-in to additional
+                                content.
                             </p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
-                    <div class="row">
-                        <h2>txt</h2>
-                    </div>
-                    <div class="row">
-                        <h2>txt2</h2>
+                    <div class="btn-group d-flex" role="group">
+                        <button type="button" class="btn btn-primary">Day</button>
+                        <button type="button" class="btn btn-primary">Month</button>
+                        <button type="button" class="btn btn-primary">Year</button>
+
                     </div>
 
+                    <!-- <div class="col-lg-3 col-md-12 col-sm-12 mt-2 border"
+                        style="background-color:rgba(46, 139, 87, 0.05);">
+                        <h5>Open Date</h5>
+                        <h2> 1 Jan 2018</h2>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 mt-2 border"
+                        style="background-color:rgba(46, 139, 87, 0.05);">
+                        <h5>Open Date</h5>
+                        <h2> 1 Jan 2018</h2>
+                    </div> -->
 
-                    <div class="bottom-0">
+                    <div class="text-center">
                         <button type="button" class="btn btn-primary">
                             <!-- style="background-color:rgba(46, 139, 87, 1); height: 60px; width: 300px;"> -->
                             View Mini Statement</button>
                     </div>
 
                 </div>
+                <!-- dash borad view -->
                 <div class="col-lg-9 col-md-12 col-sm-12 mt-2 border">
-                    <div class="row grid gap-0 row-gap-3 ">
-                        <!-- ROW CARD 1st -->
-                        <div class="row grid gap-0 column-gap-3 p-4 m-4">
-                            <!-- CARD 1 -->
-                            <div class="col-lg-3 col-md-12 col-sm-12 mt-2  border text-center m-2 p-2"
-                                style="background-color:rgba(46, 139, 87, 0.05);">
-                                <h5>Open Date</h5>
-                                <h2> 1 Jan 2018</h2>
+                    <div style="background-color: aliceblue;">
+                        <div class="row grid gap-0 row-gap-3 ">
+                            <!-- ROW CARD 1st -->
+                            <div class="row grid gap-0 column-gap-3 p-4 m-4">
+                                <!-- CARD 1 -->
+                                <!-- <div class="col-lg-3 col-md-12 col-sm-12 mt-2  border text-center m-2 p-2"
+                                        style="background-color:rgba(46, 139, 87, 0.05);">
+                                        <h5>Open Date</h5>
+                                        <h2> 1 Jan 2018</h2>
+                                    </div> -->
+                                <div class="card col-lg-3 col-md-12 col-sm-12 mt-2 border text-center m-2 p-2"
+                                    style="background-color: rgba(46, 139, 87, 0.05);">
+                                    <a type="button" class="btn" href="#">
+                                        <div class="card-body">
+
+                                            <img src="../icon/card/message-add.svg">
+                                            <h5> Open Date</h5>
+                                            <h2>01 Jan 2018</h2>
+
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- CARD 2 -->
+                                <div class="card col-lg-3 col-md-12 col-sm-12 mt-2 border text-center m-2 p-2"
+                                    style="background-color:rgba(46, 139, 87, 0.05);">
+                                    <!-- <button type="button"class="btn">
+                                            <img src="../icon/card/calendar.svg">
+                                        <h5>Last Transaction Date</h5>
+                                        <h2> 1 Jan 2018</h2>
+                                                </button> -->
+                                    <a type="button" class="btn" href="#">
+                                        <div class="card-body">
+
+                                            <img src="../icon/card/message-add.svg">
+                                            <h5> Open Date</h5>
+                                            <h2>01 Jan 2018</h2>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- CARD3 -->
+                                <div class="card col-md-3 col-sm-12 mt-2  border text-center m-2 p-2"
+                                    style="background-color:rgba(46, 139, 87, 0.05);">
+                                    <!-- <h5>Open Date</h5>
+                                        <h2> 1 Jan 2018</h2> -->
+                                    <a type="button" class="btn" href="#">
+                                        <div class="card-body">
+
+                                            <img src="../icon/card/message-add.svg">
+                                            <h5> Open Date</h5>
+                                            <h2>01 Jan 2018</h2>
+
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            <!-- CARD 2 -->
-                            <div class="col-lg-3 col-md-12 col-sm-12 mt-2 border text-center m-2 p-2"
-                                style="background-color:rgba(46, 139, 87, 0.05);">
-                                <h5>Open Date</h5>
-                                <h2> 1 Jan 2018</h2>
-                            </div>
-                            <!-- CARD3 -->
-                            <div class="col-lg-3 col-md-12 col-sm-12 mt-2  border text-center m-2 p-2"
-                                style="background-color:rgba(46, 139, 87, 0.05);">
-                                <h5>Open Date</h5>
-                                <h2> 1 Jan 2018</h2>
-                            </div>
-                        </div>
-                        <!-- ROW 2 -->
-                        <div class="row grid gap-0 column-gap-3 p-4 m-4">
-                            <!-- CARD 1 -->
-                            <div class="col-lg-3 col-md-12 col-sm-12 mt-2  border text-center m-2 p-2"
-                                style="background-color:rgba(46, 139, 87, 0.05);">
-                                <h5>Open Date</h5>
-                                <h2> 1 Jan 2018</h2>
-                            </div>
-                            <!-- CARD 2 -->
-                            <div class="col-lg-3 col-md-12 col-sm-12 mt-2  border text-center m-2 p-2"
-                                style="background-color:rgba(46, 139, 87, 0.05);">
-                                <h5>Open Date</h5>
-                                <h2> 1 Jan 2018</h2>
-                            </div>
-                            <!-- CARD3 -->
-                            <div class="col-lg-3 col-md-12 col-sm-12 mt-2  border text-center m-2 p-2"
-                                style="background-color:rgba(46, 139, 87, 0.05);">
-                                <h5>Open Date</h5>
-                                <h2> 1 Jan 2018</h2>
+                            <!-- ROW 2 -->
+                            <div class="row grid gap-0 column-gap-3 p-4 m-4">
+                                <!-- CARD 1 -->
+                                <!-- <div class="col-lg-3 col-md-12 col-sm-12 mt-2  border text-center m-2 p-2"
+                                        style="background-color:rgba(46, 139, 87, 0.05);">
+                                        <h5>Open Date</h5>
+                                        <h2> 1 Jan 2018</h2>
+                                    </div> -->
+                                <div class="card col-lg-3 col-md-12 col-sm-12 mt-2 border text-center m-2 p-2"
+                                    style="background-color: rgba(46, 139, 87, 0.05);">
+                                    <a type="button" class="btn" href="#">
+                                        <div class="card-body">
+
+                                            <img src="../icon/card/message-add.svg">
+                                            <h5> Open Date</h5>
+                                            <h2>01 Jan 2018</h2>
+
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- CARD 2 -->
+                                <div class="card col-lg-3 col-md-12 col-sm-12 mt-2 border text-center m-2 p-2"
+                                    style="background-color:rgba(46, 139, 87, 0.05);">
+                                    <!-- <button type="button"class="btn">
+                                            <img src="../icon/card/calendar.svg">
+                                        <h5>Last Transaction Date</h5>
+                                        <h2> 1 Jan 2018</h2>
+                                                </button> -->
+                                    <a type="button" class="btn" href="#">
+                                        <div class="card-body">
+
+                                            <img src="../icon/card/message-add.svg">
+                                            <h5> Open Date</h5>
+                                            <h2>01 Jan 2018</h2>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- CARD3 -->
+                                <div class="card col-md-3 col-sm-12 mt-2  border text-center m-2 p-2"
+                                    style="background-color:rgba(46, 139, 87, 0.05);">
+                                    <!-- <h5>Open Date</h5>
+                                        <h2> 1 Jan 2018</h2> -->
+                                    <a type="button" class="btn" href="#">
+                                        <div class="card-body">
+
+                                            <img src="../icon/card/message-add.svg">
+                                            <h5> Open Date</h5>
+                                            <h2>01 Jan 2018</h2>
+
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+
                     <!-- AD IMAGES -->
                     <div class="row align-text-bottom">
                         <!-- BIG AD -->
-                        <div class="col-lg-9 col-md-12 col-sm-12 mt-2 ">
+                        <div class="col-lg-7 col-md-12 col-sm-12 mt-2 border m-2 p-2 ">
                             <img src="../img/bigAD.png" alt="BIG AD">
                         </div>
                         <!-- SM AD -->
-                        <div class="col-lg-3 col-md-12 col-sm-12 mt-2 ">
+                        <div class="col-lg-2 col-md-12 col-sm-12 mt-2 border m-2 p-2 ">
                             <img src="../img/smallAD.png" alt="SMALL AD">
                         </div>
+
 
                     </div>
 
@@ -225,13 +376,12 @@
             </div>
 
         </div>
-
-
     </div>
 </body>
 
 <!-- Bootstrap JS -->
 <script src="../js/bootstrap.min.js"></script>
+<link href=" https://cdn.jsdelivr.net/npm/vuesax@3.12.2/dist/vuesax.min.css " rel="stylesheet">
 <script>
     // Function to update the text box with the current time
     function updateCurrentTime() {
