@@ -115,19 +115,24 @@
                         </div>
 
                     </li>
+                    <li>
+                        <p class="text-center fs-6 fw-lighter lh-sm"> Copyrights 2024 SIL Bank V 1.0.0.0</p>
+                    </li>
                 </ul>
+
             </div>
         </div>
 
-        <div class="bg-light flex-fill overflow-scroll">
-            <div class="p-2 d-md-none d-flex text-white bg-dark ">
+        <div class="bg-light flex-fill p-4 overflow-scroll">
+            <div class="p-2 d-md-none d-flex text-white bg-dark fixed-top ">
                 <a href="#" class="text-white" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
                     <img src="../icon/data-2.svg" style="background-color: aliceblue;">
                 </a>
                 <span class="ms-3">INTERNET BANKING</span>
             </div>
-            <div class="row container-fluid p-4 m-3">
-                <div class="col-8">
+            <!-- ABOUT US ROW -->
+            <div class="row container-fluid p-2 m-2">
+                <div class="col-12">
                     <div class="btn-group d-flex" role="group">
                         <button type="button" class="btn btn-primary"
                             style="background-color:rgba(46, 157, 220, 0.05);border: none;"><span
@@ -159,18 +164,28 @@
                                 </a>
                             </li>
                         </ul>
+                        <div class="float-end" style="background-color:beige ;display: flex;
+                        width: 262px;
+                        padding: 10px 19px;
+                        justify-content: flex-end;
+                        align-items: center;
+                        gap: 123px;">
+                        <div class="col float-end">
+                            <p>Welcome</p>
+                        </div>
+                        <div class="col float-end">
+                            <img src="../icon/profile-2user.svg">
+                
+                        </div>
+                        
+
+                        </div>
                     </div>
                 </div>
-
-
-                <div class="card col-lg-3 col-md-12 col-sm-12 mt-2 border text-center m-2 p-2"
-                    style="background-color:rgba(46, 139, 87, 0.05);">
-                    <h5>Open Date</h5>
-                    <h2> 1 Jan 2018</h2>
-                </div>
             </div>
-            <div class="row container-fluid p-4 m-4 ">
-                <div class="list-group list-group-horizontal-sm" id="list-tab" role="tablist">
+            <!-- PAGE SUB MENU -->
+            <div class="row mt-2">
+                <div class="list-group list-group-horizontal-sm text-center" id="list-tab" role="tablist">
                     <a class="list-group-item list-group-item-action active" id="list-personalise-prof-list"
                         data-bs-toggle="list" href="#list-personalise-prof" role="tab"
                         aria-controls="list-personalise-prof"
@@ -203,10 +218,28 @@
                         Tag Account</a>
                 </div>
             </div>
-            <div class="row dashboard position-relative">
+            <div class="row">
+
                 <!--  Side View  -->
-                <div class="col-lg-3 col-md-12 col-sm-12 mt-2 border ">
-                    <div class="card text-center mb-3">
+                <div class="col-lg-3 col-md-12 col-sm-12 mt-2 p-2 border text-center">
+                    <div class="p-2" style="border-radius: 10px;
+                    background: linear-gradient(66deg, #2E9DDC -11.84%, #219653 98.75%);
+                    backdrop-filter: blur(17.5px); width: 100%;height: 180px;">
+                        <div class="text-end">
+                            <p>BALANCE</p>
+                            <p>BDT</p>
+                            
+                        </div>
+                        <div class="float-start">
+                            <p>Account Number</p>
+                            <p>3455 4562 7710</p>
+                        </div>
+                    <div class="float-end">
+                        <p>Account Type</p>
+                        <p>G. Savings</p>
+                    </div>
+                    </div>
+                    <!-- <div class="card text-center mb-3">
                         <div class="card-body">
                             <h5 class="card-title">Special title treatment</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional
@@ -214,50 +247,70 @@
                             </p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
-                    </div>
-                    <div class="btn-group d-flex" role="group">
-                        <button type="button" class="btn btn-primary">Day</button>
-                        <button type="button" class="btn btn-primary">Month</button>
-                        <button type="button" class="btn btn-primary">Year</button>
 
-                    </div>
-
-                    <!-- <div class="col-lg-3 col-md-12 col-sm-12 mt-2 border"
-                        style="background-color:rgba(46, 139, 87, 0.05);">
-                        <h5>Open Date</h5>
-                        <h2> 1 Jan 2018</h2>
-                    </div>
-                    <div class="col-lg-3 col-md-12 col-sm-12 mt-2 border"
-                        style="background-color:rgba(46, 139, 87, 0.05);">
-                        <h5>Open Date</h5>
-                        <h2> 1 Jan 2018</h2>
                     </div> -->
+                    <div class="btn-group d-flex" role="group">
+                        <button type="button" class="btn btn-secondary">Day</button>
+                        <button type="button" class="btn btn-primary active"
+                            style="background-color:rgba(46, 139, 87, 1);">Month</button>
+                        <button type="button" class="btn btn-secondary">Year</button>
 
-                    <div class="text-center">
-                        <button type="button" class="btn btn-primary">
-                            <!-- style="background-color:rgba(46, 139, 87, 1); height: 60px; width: 300px;"> -->
-                            View Mini Statement</button>
                     </div>
+                    <div class="card text-center m-2" style="background-color:rgba(46, 139, 87, 0.05);">
+
+                        <a type="button" class="btn" href="#">
+                            <div class="card-body">
+
+                                <img class="m-2" src="../icon/card/dollar-square.svg">
+                                <p class="fs-6 text-capitalize"> last transaction amount</p>
+                                <p class="fs-2 fw-bold text-capitalize"><span class="fs-6 text-uppercase fw-normal">bdt
+                                    </span> 1,456.00</p>
+
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card text-center m-2 " style="background-color:rgba(46, 139, 87, 0.05);">
+
+                        <a type="button" class="btn" href="#">
+                            <div class="card-body">
+
+                                <img class="m-2" src="../icon/card/dollar-square.svg">
+                                <p class="fs-6 text-capitalize"> last transaction amount</p>
+                                <p class="fs-2 fw-bold text-capitalize"><span class="fs-6 text-uppercase fw-normal">bdt
+                                    </span> 1,456.00</p>
+
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="text-center align-self-end ml-auto">
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:rgba(46, 139, 87, 1); height: 60px; width: 80%;">
+                            View Mini Statement</button>
+
+                    </div>
+
+
 
                 </div>
+
                 <!-- dash borad view -->
-                <div class="col-lg-9 col-md-12 col-sm-12 mt-2 border">
-                    <div style="background-color: aliceblue;">
-                        <div class="row grid gap-0 row-gap-3 ">
+                <div class="col-lg-9 col-md-12 col-sm-12 p-4 border">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-personalise-prof" role="tabpanel"
+                            aria-labelledby="list-personalise-prof-list">
                             <!-- ROW CARD 1st -->
-                            <div class="row grid gap-0 column-gap-3 p-4 m-4">
+                            <div class="row mt-4 justify-items-center">
                                 <!-- CARD 1 -->
-                                <!-- <div class="col-lg-3 col-md-12 col-sm-12 mt-2  border text-center m-2 p-2"
-                                        style="background-color:rgba(46, 139, 87, 0.05);">
-                                        <h5>Open Date</h5>
-                                        <h2> 1 Jan 2018</h2>
-                                    </div> -->
-                                <div class="card col-lg-3 col-md-12 col-sm-12 mt-2 border text-center m-2 p-2"
+
+                                <div class="card col-lg-3 col-md-5 col-sm-5 border text-center m-2"
                                     style="background-color: rgba(46, 139, 87, 0.05);">
                                     <a type="button" class="btn" href="#">
                                         <div class="card-body">
 
-                                            <img src="../icon/card/message-add.svg">
+                                            <img class="m-2" src="../icon/card/message-add.svg">
                                             <h5> Open Date</h5>
                                             <h2>01 Jan 2018</h2>
 
@@ -266,7 +319,7 @@
                                 </div>
 
                                 <!-- CARD 2 -->
-                                <div class="card col-lg-3 col-md-12 col-sm-12 mt-2 border text-center m-2 p-2"
+                                <div class="card col-lg-3 col-md-5 col-sm-5 border text-center m-2"
                                     style="background-color:rgba(46, 139, 87, 0.05);">
                                     <!-- <button type="button"class="btn">
                                             <img src="../icon/card/calendar.svg">
@@ -276,52 +329,51 @@
                                     <a type="button" class="btn" href="#">
                                         <div class="card-body">
 
-                                            <img src="../icon/card/message-add.svg">
-                                            <h5> Open Date</h5>
-                                            <h2>01 Jan 2018</h2>
+                                            <img class="m-2" src="../icon/card/calendar.svg">
+                                            <p class="fs-6 text-capitalize"> last transaction data</p>
+                                            <p class="fs-2 fw-bold text-capitalize">29 sep 2018</p>
 
                                         </div>
                                     </a>
                                 </div>
                                 <!-- CARD3 -->
-                                <div class="card col-md-3 col-sm-12 mt-2  border text-center m-2 p-2"
+                                <div class="card col-lg-3 col-md-5 col-sm-5 border text-center m-2"
                                     style="background-color:rgba(46, 139, 87, 0.05);">
-                                    <!-- <h5>Open Date</h5>
-                                        <h2> 1 Jan 2018</h2> -->
+
                                     <a type="button" class="btn" href="#">
                                         <div class="card-body">
 
-                                            <img src="../icon/card/message-add.svg">
-                                            <h5> Open Date</h5>
-                                            <h2>01 Jan 2018</h2>
+                                            <img class="m-2" src="../icon/card/dollar-square.svg">
+                                            <p class="fs-6 text-capitalize"> last transaction amount</p>
+                                            <p class="fs-2 fw-bold text-capitalize"><span
+                                                    class="fs-6 text-uppercase fw-normal">bdt
+                                                </span> 1,456.00</p>
+
 
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <!-- ROW 2 -->
-                            <div class="row grid gap-0 column-gap-3 p-4 m-4">
+                                <!-- ROW2 -->
                                 <!-- CARD 1 -->
                                 <!-- <div class="col-lg-3 col-md-12 col-sm-12 mt-2  border text-center m-2 p-2"
                                         style="background-color:rgba(46, 139, 87, 0.05);">
                                         <h5>Open Date</h5>
                                         <h2> 1 Jan 2018</h2>
                                     </div> -->
-                                <div class="card col-lg-3 col-md-12 col-sm-12 mt-2 border text-center m-2 p-2"
+                                <div class="card col-lg-3 col-md-5 col-sm-5 border text-center m-2"
                                     style="background-color: rgba(46, 139, 87, 0.05);">
                                     <a type="button" class="btn" href="#">
                                         <div class="card-body">
 
-                                            <img src="../icon/card/message-add.svg">
-                                            <h5> Open Date</h5>
-                                            <h2>01 Jan 2018</h2>
-
+                                            <img class="m-2" src="../icon/card/document.svg">
+                                            <p class="fs-6 text-capitalize">last cheque no</p>
+                                            <p class="fs-2 fw-bold text-capitalize">1 jan 2018</p>
                                         </div>
                                     </a>
                                 </div>
 
                                 <!-- CARD 2 -->
-                                <div class="card col-lg-3 col-md-12 col-sm-12 mt-2 border text-center m-2 p-2"
+                                <div class="card col-lg-3 col-md-5 col-sm-5 border text-center m-2"
                                     style="background-color:rgba(46, 139, 87, 0.05);">
                                     <!-- <button type="button"class="btn">
                                             <img src="../icon/card/calendar.svg">
@@ -331,24 +383,25 @@
                                     <a type="button" class="btn" href="#">
                                         <div class="card-body">
 
-                                            <img src="../icon/card/message-add.svg">
-                                            <h5> Open Date</h5>
-                                            <h2>01 Jan 2018</h2>
+                                            <img src="../icon/card/calendar.svg" class="m-2">
+                                            <p class="fs-6 text-capitalize">last cheque date</p>
+                                            <p class="fs-2 fw-bold text-capitalize">29 sep 2018</p>
 
                                         </div>
                                     </a>
                                 </div>
                                 <!-- CARD3 -->
-                                <div class="card col-md-3 col-sm-12 mt-2  border text-center m-2 p-2"
+                                <div class="card col-lg-3 col-md-5 col-sm-5 border text-center m-2"
                                     style="background-color:rgba(46, 139, 87, 0.05);">
-                                    <!-- <h5>Open Date</h5>
-                                        <h2> 1 Jan 2018</h2> -->
+
                                     <a type="button" class="btn" href="#">
                                         <div class="card-body">
 
-                                            <img src="../icon/card/message-add.svg">
-                                            <h5> Open Date</h5>
-                                            <h2>01 Jan 2018</h2>
+                                            <img class="m-2" src="../icon/card/dollar-square.svg">
+                                            <p class="fs-6 text-capitalize"> last cheque amount</p>
+                                            <p class="fs-2 fw-bold text-capitalize"><span
+                                                    class="fs-6 text-uppercase fw-normal">bdt
+                                                </span> 1,456.00</p>
 
                                         </div>
                                     </a>
@@ -356,27 +409,30 @@
                             </div>
                         </div>
                     </div>
-
-
                     <!-- AD IMAGES -->
                     <div class="row align-text-bottom">
                         <!-- BIG AD -->
-                        <div class="col-lg-7 col-md-12 col-sm-12 mt-2 border m-2 p-2 ">
-                            <img src="../img/bigAD.png" alt="BIG AD">
+                        <div class="col-lg-7 col-md-12 col-sm-12 mt-2 border m-2">
+                            <img src="../img/bigAD.png" alt="BIG AD" class="col-lg-7 col-md-12 col-sm-12">
                         </div>
                         <!-- SM AD -->
-                        <div class="col-lg-2 col-md-12 col-sm-12 mt-2 border m-2 p-2 ">
+                        <div class="col-lg-2 col-md-12 col-sm-12 mt-2 border m-2">
                             <img src="../img/smallAD.png" alt="SMALL AD">
                         </div>
 
 
                     </div>
 
-                </div>
-            </div>
 
+                </div>
+
+
+            </div>
         </div>
+
+
     </div>
+
 </body>
 
 <!-- Bootstrap JS -->
