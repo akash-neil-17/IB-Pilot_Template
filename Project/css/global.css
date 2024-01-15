@@ -15,9 +15,9 @@ h3{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.logo-container{
-    margin-top: 78px;
-    
+.image-container .logo-container{
+    margin-top: 10vh;
+    height: 25vh;
 }
 .image-container .logo-container img{
     display: block;
@@ -30,20 +30,22 @@ h3{
     --bs-breadcrumb-divider-color: white;
 }
 .slogan-container{
-    margin-top: 20px;
     font-size: x-large;
     font-weight: 500;
     color: white;
+    height: 55vh;
 }
 .shortcut-links{
-    margin-top: 50%;
     font-size: medium;
     font-weight: 500;
+    height: 10vh;
 }
 .shortcut-links a{
     color: white;
 }
-
+.language-selection{
+    height: 5vh;
+}
 .language-selection ol{
     justify-content: end;
     margin-top: 5%;
@@ -62,10 +64,12 @@ h3{
     display: flex;
     justify-content: center;
     margin-top: 10%;
-    /* align-items: center; */
-    height: 75%;
+    height: 73vh;
     width: 100%;
     font-size: medium;
+}
+.form h3{
+    margin-bottom: 5vh;
 }
 .login-form .logo-container img{
     display: none;
@@ -76,21 +80,40 @@ h3{
 }
 #floatingPassword{
     width: 100%;
+    border-radius: 5px;
+    border-right: none;
 }
 #passwordReveal{
     height: 100%;
     position: absolute;
-    border: none;
+    border: 1px solid #dee2e6;
+    border-left: none;
     background-color: transparent;
     right: 0;
     opacity: 0.7;
+    border-radius: 5px;
+    padding-right: 10px;
 }
 .signIn{
-    padding: 10px 20px 10px 20px;
+    padding: 10px 32px;
     background-color: #2E8B57;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.footer p{
+    height: 7vh;
+    align-items: end;
+    font-size: x-small;
+    font-weight: 300;
+}
+.form-label{
+    font-weight: bold;
+}
+.form-control:focus{
+    border: none !important;
 }
 .form a, a{
     color: black;
@@ -118,29 +141,44 @@ h3{
         margin: 0;
         padding: 0;
     }
+    .login-form{
+        font-family: 'Poppins';
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    .language-selection{
+        height: 5vh;
+    }
+    .language-selection ol{
+        margin-top: 5%;
+        margin-right: 5%;
+        font-size: small;
+        font-weight: 500;
+    }
+    .login-form .logo-container{
+        height: 15vh;
+    }
     .login-form .logo-container img{
         display: block;
         width: 100px;
         height: 100px;
     }
-    .language-selection ol{
-        margin-top: 5%;
-        margin-right: 5%;
-        font-size: medium;
-        font-weight: 500;
-    }
+    
     .form{
         display: flex;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
         margin: 0;
         padding: 0;
-        height: 80%;
+        padding-top: 5vh;
+        height: 73vh;
         width: 100%;
     }
-    .footer p{
+    .footer{
+        height: 7vh;
+        align-items: end;
         font-size: x-small;
-        font-weight: 700;
+        font-weight: 300;
     }
     
 }
