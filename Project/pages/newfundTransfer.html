@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Transfer</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link href=" https://cdn.jsdelivr.net/npm/vuesax@3.12.2/dist/vuesax.min.css " rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container-fluid p-0 d-flex h-100 "> 
+        <div id="bdSidebar"
+            class="d-flex flex-column flex-shrink-0 p-3 text-black offcanvas-md offcanvas-start overflow-scroll"
+            style="width: 280px;">
+            <a href="#" class="navbar-brand">
+                <div class="text-center">
+                    <img src="../img/rupali-logo.png" alt="Rupali Bank Logo" id="navLogo">
+                </div>
+            </a>
+
+            <ul class="mynav nav nav-pills mb-auto mt-5">
+                <li class="nav-item mb-1 active">
+                    <!-- <a href="#" class="active">
+                        <i src="../icon/home-2.svg"></i>
+                        My Account
+                    </a> -->
+                    <a href="./sidebar.html">
+                        <img src="../icon/home-2.svg">
+                        My Account
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="./newloan.html" class="">
+                        <img src="../icon/wallet-check.svg">
+                        Payment
+
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="./newfundTransfer.html" class="">
+                        <!-- <i class="isax-profile-2user"></i> -->
+                        <img src="../icon/empty-wallet-change.svg">
+                        Fund Transfer
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#" class="">
+                        <!-- <i class="fa-solid fa-star"></i> -->
+                        <img src="../icon/profile-2user.svg">
+                        Beneficiary
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#" class="">
+                        <img src="../icon/mobile.svg">
+                        <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+                        Mobilr Recharge
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#" class="">
+                        <img src="../icon/receipt.svg">
+                        <!-- <i class="fa-solid fa-user"></i> -->
+                        Utility Bill
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#" class="">
+                        <img src="../icon/empty-wallet.svg">
+                        <!-- <i class="fa-solid fa-user"></i> -->
+                        Account Services
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#" class="">
+                        <img src="../icon/cards.svg">
+                        <!-- <i class="fa-solid fa-user"></i> -->
+                        Card Services
+                    </a>
+                </li>
+            </ul>
+
+            <div>
+                <ul class="mynav nav nav-pills mb-auto mt-5">
+                    <li class="nav-item mb-1">
+                        <a href="#" class="">
+                            <img src="../icon/setting-3.svg">
+                            <!-- <i class="isax-smart-home2"></i> -->
+                            Settings
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="#" class="">
+                            <img src="../icon/logout.svg">
+                            <!-- <i class="isax-empty-wallet-change"></i> -->
+                            Logout
+
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+
+                        <div style="display: inline; float: inline-end;">Your last login time: &nbsp;
+
+                            <span id="currentTime" style="display: inline; float: inline-end;"></span>
+                        </div>
+
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+                <footer class="text-center fs-6 fw-lighter lh-sm copyRt"> Copyrights 2024 SIL Bank V 1.0.0.0</footer>
+
+            </div>
+        </div>
+
+        <div class="bg-light flex-fill p-4 overflow-scroll">
+            <div class="p-2 d-md-none d-flex text-white bg-dark fixed-top ">
+                <a href="#" class="text-white" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
+                    <img src="../icon/data-2.svg" style="background-color: aliceblue;">
+                </a>
+                <span class="ms-3">INTERNET BANKING</span>
+            </div>
+            <!-- ABOUT US ROW -->
+            <div class="row text-center">
+                <div class="col-lg-9 col-md-12 col-sm-12">
+                    <div class="btn-group d-flex" role="group">
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:rgba(46, 157, 220, 0.05);border: none;"><span
+                                style="color: black;">About Us</span> </button>
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:rgba(46, 157, 220, 0.05);border: none;"><span
+                                style="color: black;">FAQs</span> </button>
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:rgba(46, 157, 220, 0.05);border: none;"><span
+                                style="color: black;">Locate Us</span> </button>
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:rgba(46, 157, 220, 0.05);border: none;"><span
+                                style="color: black;">Contact Us</span> </button>
+                        <ul class="mynav nav nav-pills flex-row">
+                            <li class="nav-item mb-1">
+                                <!-- <a href="#" class="active">
+                                        <i src="../icon/home-2.svg"></i>
+                                        My Account
+                                    </a> -->
+                                <a href="#">
+                                    <img src="../icon/sms-notification.svg">
+
+
+                                </a>
+                            </li>
+                            <li class="nav-item mb-1">
+                                <a href="#" class="">
+                                    <img src="../icon/notification.svg">
+
+                                </a>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-12 col-sm-12 float-end text-center">
+                    <div class="row" style="display: flex;
+                    width: 100%;
+                    padding: 10px 19px;
+                    justify-content: flex-end;
+                    align-items: center;
+                    background: var(--White, #FFF);">
+                        <div class="col-7 text-end">
+                            <span style="color: var(--Medium-Gray, #E0E0E0);
+                            font-family: Poppins;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;">Welcome</span>
+                            <br>
+                            <span style="color: var(--Almost-Black, #333);
+                            font-family: Poppins;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;">Master Yoda</span>
+                        </div>
+                        <div class="col-2 float-end" style="width: 44px;
+                        height: 44px;border-radius: 10px;
+                        border: 2px solid var(--Medium-Gray, #E0E0E0);
+                        background: url(<path-to-image>), lightgray 50% / cover no-repeat;">
+                            <img src="../icon/profile-2user.svg">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PAGE SUB MENU -->
+            <div class="row m-4">
+                <div class="list-group list-group-horizontal-sm gap-2" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-personalise-prof-list"
+                        data-bs-toggle="list" href="#list-personalise-prof" role="tab"
+                        aria-controls="list-personalise-prof"
+                        style="height: 56; width: 191; padding:16px, 30px, 16px, 30px; gap: 20px; border-radius: 6px;">Personalise
+                        Profile</a>
+                    <a class="list-group-item list-group-item-action" id="list-change-contact-details-list"
+                        data-bs-toggle="list" href="#list-change-contact-details" role="tab"
+                        aria-controls="list-change-contact-details"
+                        style=" height: 56; width: 191; padding:16px, 30px, 16px, 30px; gap: 20px; border-radius: 6px;">Change
+                        Contact Deatails</a>
+                    <a class="list-group-item list-group-item-action" id="list-otp-lock-unlock-list"
+                        data-bs-toggle="list" href="#list-otp-lock-unlock" role="tab"
+                        aria-controls="list-otp-lock-unlock"
+                        style="height: 56; width: 191; padding:16px, 30px, 16px, 30px; gap: 20px; border-radius: 6px;">OTP
+                        Lock/Unlock</a>
+                    <a class="list-group-item list-group-item-action" id="list-change-login-password-list"
+                        data-bs-toggle="list" href="#list-change-login-password" role="tab"
+                        aria-controls="list-change-login-password"
+                        style=" height: 56; width: 191; padding:16px, 30px, 16px, 30px; gap: 20px; border-radius: 6px;">Change
+                        Login Password</a>
+                    <a class="list-group-item list-group-item-action" id="list-change-login-password-list"
+                        data-bs-toggle="list" href="#list-change-login-password" role="tab"
+                        aria-controls="list-change-login-password"
+                        style=" height: 56; width: 191; padding:16px, 30px, 16px, 30px; gap: 20px; border-radius: 6px;">Change
+                        Cards</a>
+                    <a class="list-group-item list-group-item-action" id="list-change-login-password-list"
+                        data-bs-toggle="list" href="#list-change-login-password" role="tab"
+                        aria-controls="list-change-login-password"
+                        style=" height: 56; width: 191; padding:16px, 30px, 16px, 30px; gap: 20px; border-radius: 6px;">Change
+                        Tag Account</a>
+                </div>
+            </div>
+            <div class="row">
+
+                
+                <!-- dash borad view -->
+                <div class="col p-2 border" style="border-radius: 10px;
+                background: #FFF;">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-personalise-prof" role="tabpanel"
+                            aria-labelledby="list-personalise-prof-list">
+                            <!-- ROW CARD 1st -->
+                            <div class="row">
+                                <!-- CARD 1 -->
+
+                                <div class="card col-lg-3 col-md-5 col-sm-5 m-2 cd-dash">
+                                    <a type="button" class="btn" href="#">
+                                        <div class="card-body">
+
+                                            <img class="m-2" src="../icon/card/message-add.svg">
+                                            <p class="fs-6 text-capitalize"> Open date</p>
+                                            <p class="fs-3 fw-bold text-capitalize">01 Jan 2018</p>
+
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- CARD 2 -->
+                                <div class="card col-lg-4 col-md-5 col-sm-5 m-2 cd-dash">
+
+                                    <a type="button" class="btn" href="#">
+                                        <div class="card-body">
+
+                                            <img class="m-2" src="../icon/card/calendar.svg">
+                                            <p class="fs-6 text-capitalize"> last transaction data</p>
+                                            <p class="fs-3 fw-bold text-capitalize">29 sep 2018</p>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- CARD3 -->
+                                <div class="card col-lg-4 col-md-5 col-sm-5 m-2 cd-dash">
+
+                                    <a type="button" class="btn" href="#">
+                                        <div class="card-body">
+
+                                            <img class="m-2" src="../icon/card/dollar-square.svg">
+                                            <p class="fs-6 text-capitalize"> last transaction amount</p>
+                                            <p class="fs-3 fw-bold text-capitalize"><span
+                                                    class="fs-6 text-uppercase fw-normal">bdt
+                                                </span> 1,456.00</p>
+
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- ROW2 -->
+                                <!-- CARD 1 -->
+
+                                <div class="card col-lg-4 col-md-5 col-sm-5 m-2 cd-dash">
+                                    <a type="button" class="btn" href="#">
+                                        <div class="card-body">
+
+                                            <img class="m-2" src="../icon/card/document.svg">
+                                            <p class="fs-6 text-capitalize">last cheque no</p>
+                                            <p class="fs-3 fw-bold text-capitalize">1 jan 2018</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- CARD 2 -->
+                                <div class="card col-lg-4 col-md-5 col-sm-5 m-2 cd-dash">
+
+                                    <!-- <button type="button"class="btn">
+                                            <img src="../icon/card/calendar.svg">
+                                        <h5>Last Transaction Date</h5>
+                                        <h2> 1 Jan 2018</h2>
+                                                </button> -->
+                                    <a type="button" class="btn" href="#">
+                                        <div class="card-body">
+
+                                            <img src="../icon/card/calendar.svg" class="m-2">
+                                            <p class="fs-6 text-capitalize">last cheque date</p>
+                                            <p class="fs-3 fw-bold text-capitalize">29 sep 2018</p>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- CARD3 -->
+                                <div class="card col-lg-4 col-md-5 col-sm-5 m-2 cd-dash">
+
+                                    <a type="button" class="btn" href="#">
+                                        <div class="card-body">
+
+                                            <img class="m-2" src="../icon/card/dollar-square.svg">
+                                            <p class="fs-6 text-capitalize"> last cheque amount</p>
+                                            <p class="fs-3 fw-bold text-capitalize"><span
+                                                    class="fs-6 text-uppercase fw-normal">bdt
+                                                </span> 1,456.00</p>
+
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AD IMAGES -->
+
+                    
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+<!-- Bootstrap JS -->
+<script src="../js/bootstrap.min.js"></script>
+<link href=" https://cdn.jsdelivr.net/npm/vuesax@3.12.2/dist/vuesax.min.css " rel="stylesheet">
+<script>
+    // Function to update the text box with the current time
+    function updateCurrentTime() {
+        var currentDate = new Date();
+        var hours = currentDate.getHours();
+        var minutes = currentDate.getMinutes();
+        var seconds = currentDate.getSeconds();
+        var formattedTime = padZero(hours) + ":" + padZero(minutes) + ":" + padZero(seconds);
+        document.getElementById("currentTime").innerHTML = formattedTime;
+    }
+
+    // Function to pad a single digit number with a leading zero
+    function padZero(number) {
+        return number < 10 ? "0" + number : number;
+    }
+
+    // Update the current time initially
+    updateCurrentTime();
+
+    // Update the current time every second (1000 milliseconds)
+    setInterval(updateCurrentTime, 1000);
+</script>
+
+</html>
