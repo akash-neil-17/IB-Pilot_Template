@@ -13,6 +13,8 @@
     <link rel="shortcut icon" href="../img/rupali-logo.png" />
     <!-- External CSS -->
     <link rel="stylesheet" href="../css/global.css" />
+    <!-- Virtual Keyboard -->
+    <link rel="stylesheet" href="../css/index-grassGreen.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
 </head>
@@ -109,10 +111,11 @@
                                     placeholder="********" />
                                 <button type="button" id="passwordReveal" class="button">
                                     <i class="icon fa-regular fa-eye-slash"></i>
-                                    <!-- <img src="../img/eye-slash.svg" alt=""> -->
+                                    <!-- <img src="../img/eye.svg" alt=""> -->
                                 </button>
                             </div>
                         </div>
+                        <div id="main"></div>
                         <div class="virtualKeyboard mt-3 mb-3">
                             <input type="checkbox" class="form-check-input" name="virtualKeyboard"
                                 id="virtualKeyboard" />
@@ -137,8 +140,11 @@
                         </div>
                     </form>
                 </div>
-                <div class="text-center footer">
-                    <p>All rights reserved. Copyright &copy; 2024, SIL V 1.0.0.0</p>
+                <div class="text-center footer-container">
+                    <div>
+                        <span><p>All rights reserved. Copyright &copy; 2024, SIL V 1.0.0.0</p></span>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -150,7 +156,25 @@
 <script src="../js/all.min.js"></script>
 <!-- jQuery -->
 <script src="../js/jquery-3.7.1.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
 <!-- External JavaScript -->
 <script src="../js/project.js"></script>
-
+<!-- Virtual Keyboard -->
+<script src="../js/index-main.js"></script>
+<script>
+    $(document).ready(function() {
+      // Make the div with id 'main' draggable
+      $('#main').draggable();
+    });
+    // keyboard
+    const keyboard = new aKeyboard.keyboard({
+      el: '#main',
+      style: {}, // additional styles
+      fixedBottomCenter: true
+    });
+    keyboard.inputOn('#floatingPassword', 'value');
+    keyboard.onclick('Enter', function(){
+        $('#main').hide();
+    });
+</script>
 </html>

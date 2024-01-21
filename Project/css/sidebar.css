@@ -1,0 +1,137 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Poppins';
+
+
+}
+
+.dashboard {
+    height: 90vh;
+}
+
+
+#navLogo {
+
+    width: 100px;
+    height: 100px;
+    left: calc(50% - 100px/2 - 641px);
+    top: calc(50% - 100px/2 - 398px);
+
+
+
+}
+
+.mynav {
+    color: black;
+}
+
+.mynav li a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    /* display: block; */
+    border-radius: 5px;
+    padding: 8px 10px;
+    display: flex;
+    /* padding-left: 10px; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--Almost-Black, #333);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mynav li a.active {
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--Accent, #2E8B57);
+
+}
+
+.mynav li a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.mynav li a i {
+    width: 25px;
+    text-align: center;
+}
+
+#mainViewCard {
+    background-color: rgba(46, 139, 87, 0.05);
+    width: 243px;
+    border-radius: 10px;
+    padding: 14px, 20px, 14px, 20px;
+    gap: 6px
+}
+
+.cd-dash {
+    border-radius: 10px;
+    background: rgba(46, 139, 87, 0.05);
+    display: flex;
+    height: 200px;
+    width: 310px;
+    padding: 14px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.side-card {
+    border-radius: 10px;
+    background: rgba(46, 139, 87, 0.05);
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 150px;
+}
+
+.side-button {
+    position: relative;
+    bottom: 0px;
+}
+
+/* .sub-menu {
+    border-radius: 6px;
+    background: #FFF;
+    display: flex;
+    width: 188px;
+    padding: 16px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+} */
+.list-group-item.active {
+
+    border-radius: 20px;
+    background-color: var(--Accent, #2E8B57);
+
+}
+
+.list-group-item {
+    color: var(--Accent, #2E8B57);
+    vertical-align: middle;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+.copyRt {
+    color: var(--Accent, #2E8B57) !important;
+    text-align: center;
+    font-size: small !important;
+    font-weight:500 !important;
+    
+}
