@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan/Finance</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link href=" https://cdn.jsdelivr.net/npm/vuesax@3.12.2/dist/vuesax.min.css " rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container-fluid p-0 d-flex h-100 ">
+        <app-sidebar></app-sidebar>
+
+        <div class="bg-light flex-fill p-4 overflow-auto">
+            <app-smallnavbar></app-smallnavbar>
+            <!-- ABOUT US ROW -->
+            <div class="row align-self-center">
+                <div class="col-lg-9 col-md-12 col-sm-12 p-3" id="aboutusid">
+                    <div class="btn-group d-flex" role="group">
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:rgba(46, 157, 220, 0.05);border: none;"><span
+                                style="color: black;">About Us</span> </button>
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:rgba(46, 157, 220, 0.05);border: none;"><span
+                                style="color: black;">FAQs</span> </button>
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:rgba(46, 157, 220, 0.05);border: none;"><span
+                                style="color: black;">Locate Us</span> </button>
+                        <button type="button" class="btn btn-primary"
+                            style="background-color:rgba(46, 157, 220, 0.05);border: none;"><span
+                                style="color: black;">Contact Us</span> </button>
+                        <ul class="mynav nav nav-pills flex-row">
+                            <li class="nav-item mb-1">
+                                <a href="#">
+                                    <img src="../icon/sms-notification.svg">
+
+
+                                </a>
+                            </li>
+                            <li class="nav-item mb-1">
+                                <a href="#" class="">
+                                    <img src="../icon/notification.svg">
+
+                                </a>
+                            </li>
+
+                        </ul>
+
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-12 col-sm-12 float-end text-center">
+                    <div class="row" style="display: flex;
+                    width: 100%;
+                    padding: 10px 19px;
+                    justify-content: flex-end;
+                    align-items: center;
+                    background: var(--White, #FFF);">
+                        <div class="col-7 text-end">
+                            <span style="color: var(--Medium-Gray, #E0E0E0);
+                            font-family: Poppins;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;">Welcome</span>
+                            <br>
+                            <span style="color: var(--Almost-Black, #333);
+                            font-family: Poppins;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;">Master Yoda</span>
+                        </div>
+                        <div class="col-2 float-end" style="width: 44px;
+                        height: 44px;border-radius: 10px;
+                        border: 2px solid var(--Medium-Gray, #E0E0E0);
+                        background: url(<path-to-image>), lightgray 50% / cover no-repeat;">
+                            <img src="../icon/profile-2user.svg">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PAGE SUB MENU -->
+            <div class="row m-4">
+                <div class="list-group list-group-horizontal-sm gap-2" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-personalise-prof-list"
+                        data-bs-toggle="list" href="#list-personalise-prof" role="tab"
+                        aria-controls="list-personalise-prof">Personalise
+                        Profile</a>
+                    <a class="list-group-item list-group-item-action" id="list-change-contact-details-list"
+                        data-bs-toggle="list" href="#list-change-contact-details" role="tab"
+                        aria-controls="list-change-contact-details">Change
+                        Contact Deatails</a>
+                    <a class="list-group-item list-group-item-action" id="list-otp-lock-unlock-list"
+                        data-bs-toggle="list" href="#list-otp-lock-unlock" role="tab"
+                        aria-controls="list-otp-lock-unlock">OTP
+                        Lock/Unlock</a>
+                    <a class="list-group-item list-group-item-action" id="list-change-login-password-list"
+                        data-bs-toggle="list" href="#list-change-login-password" role="tab"
+                        aria-controls="list-change-login-password">Change
+                        Login Password</a>
+                    <a class="list-group-item list-group-item-action" id="list-change-login-password-list"
+                        data-bs-toggle="list" href="#list-change-login-password" role="tab"
+                        aria-controls="list-change-login-password">Change
+                        Cards</a>
+                    <a class="list-group-item list-group-item-action" id="list-change-login-password-list"
+                        data-bs-toggle="list" href="#list-change-login-password" role="tab"
+                        aria-controls="list-change-login-password">Change
+                        Tag Account</a>
+                </div>
+            </div>
+            <div class="row">
+
+                <!--  Side View  -->
+                <!-- Credit Card -->
+
+                <div class="col-lg-3 col-md-6 col-sm-12 border text-center sideview">
+
+                    <div class="mt-2 p-2 object-fit-scale border rounded credircard">
+                        <div class="text-end">
+                            <div style="color: rgba(255, 255, 255, 0.65);
+                            text-align: right;
+                            font-family: Poppins;
+                            font-size: 9px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            letter-spacing: 0.72px;
+                            text-transform: uppercase;">BALANCE</div>
+                            <div style="color: #FFF;
+                            text-align: right;
+                            font-family: Poppins;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;">BDT</div>
+
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6 align-self-end">
+                                    <div style="color: rgba(255, 255, 255, 0.65);
+                            font-family: Poppins;
+                            font-size: 9px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            letter-spacing: 0.72px;
+                            text-transform: uppercase;">Account Number</div>
+                                    <div style="color: #FFF;
+                            font-family: Poppins;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: 1.12px;">3455 4562 7710</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="align-self-end" style="color: rgba(255, 255, 255, 0.65);
+                            font-family: Poppins;
+                            font-size: 9px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            letter-spacing: 0.72px;
+                            text-transform: uppercase;">Account Type</div>
+                                    <div style="color: #FFF;
+                            font-family: Poppins;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: 1.12px;">G. Savings</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Buttons -->
+                    <div class="btn-group col-12 mt-2 text-center" role="group" style="width: 100%;">
+
+
+                        <button type="button" class="col-4 btn btn-secondary">Day</button>
+
+
+
+                        <button type="button" class="col-4 btn btn-primary active"
+                            style="background-color:rgba(46, 139, 87, 1);">Month</button>
+
+
+                        <button type="button" class="col-4 btn btn-secondary">Year</button>
+
+
+
+
+
+
+                    </div>
+                    <!-- Card 1 -->
+                    <div class="card col-lg-2 col-md-5 col-sm-5 mt-2 side-card">
+
+                        <a type="button" class="btn" href="#">
+                            <div class="card-body">
+                                <p class="fs-6 text-capitalize">
+                                    <img class="m-2" src="../icon/card/dollar-square.svg">
+                                    last transaction amount
+                                </p>
+                                <div class="fs-5 fw-bold text-capitalize"><span
+                                        class="fs-6 text-uppercase fw-normal">bdt
+                                    </span> 1,456.00</div>
+
+
+                            </div>
+                        </a>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card col-lg-2 col-md-5 col-sm-5 mt-2 side-card">
+
+                        <a type="button" class="btn mt-2" href="#">
+                            <div class="card-body">
+
+
+                                <p class="fs-6 text-capitalize">
+                                    <img class="m-2" src="../icon/card/dollar-square.svg"> last transaction amount
+                                </p>
+                                <p class="fs-5 fw-bold text-capitalize"><span class="fs-6 text-uppercase fw-normal">bdt
+                                    </span> 1,456.00</p>
+
+
+                            </div>
+                        </a>
+                    </div>
+                    <!-- CARD 3 -->
+                    <!-- <div class="card col-lg-2 col-md-5 col-sm-5 mt-2 side-card">
+
+                        <a type="button" class="btn mt-2" href="#">
+                            <div class="card-body">
+
+
+                                <p class="fs-6 text-capitalize">
+                                    <img class="m-2" src="../icon/card/dollar-square.svg"> last transaction amount
+                                </p>
+                                <p class="fs-5 fw-bold text-capitalize"><span class="fs-6 text-uppercase fw-normal">bdt
+                                    </span> 1,456.00</p>
+
+
+                            </div>
+                        </a>
+                    </div> -->
+                    <!-- CARD 4 -->
+                    <!-- <div class="card col-lg-3 col-md-5 col-sm-5 mt-2 side-card">
+
+                        <a type="button" class="btn mt-2" href="#">
+                            <div class="card-body">
+
+
+                                <p class="fs-6 text-capitalize">
+                                    <img class="m-2" src="../icon/card/dollar-square.svg"> last transaction amount
+                                </p>
+                                <p class="fs-5 fw-bold text-capitalize"><span class="fs-6 text-uppercase fw-normal">bdt
+                                    </span> 1,456.00</p>
+
+
+                            </div>
+                        </a>
+                    </div> -->
+
+                    <div class="mt-3 ">
+                        <button type="button" class="btn-primary side-button">
+                            View Mini Statement</button>
+
+                    </div>
+
+
+
+
+                </div>
+
+                <!-- dash borad view -->
+                <div class="col-lg-9 col-md-7 col-sm-12 border">
+                    <div class="row">
+                        <div class="col-12 dashboard">
+                            <div class="tab-pane fade show active" id="list-personalise-prof" role="tabpanel"
+                                aria-labelledby="list-personalise-prof-list">
+                                <!-- ROW CARD 1st -->
+                                <div class="row">
+                                    <!-- CARD 1 -->
+
+                                    <div class="card col-lg-3 col-md-5 col-sm-5 cd-dash">
+                                        <a type="button" class="btn" href="#">
+                                            <div class="card-body">
+
+                                                <img class="m-2" src="../icon/card/message-add.svg">
+                                                <p class="fs-6 text-capitalize"> Open date</p>
+                                                <p class="fs-3 fw-bold text-capitalize">01 Jan 2018</p>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- CARD 2 -->
+                                    <div class="card col-lg-3 col-md-5 col-sm-5 cd-dash">
+
+                                        <a type="button" class="btn" href="#">
+                                            <div class="card-body">
+
+                                                <img class="m-2" src="../icon/card/calendar.svg">
+                                                <p class="fs-6 text-capitalize"> last transaction data</p>
+                                                <p class="fs-3 fw-bold text-capitalize">29 sep 2018</p>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- CARD3 -->
+                                    <div class="card col-lg-3 col-md-5 col-sm-5 cd-dash">
+
+                                        <a type="button" class="btn" href="#">
+                                            <div class="card-body">
+
+                                                <img class="m-2" src="../icon/card/dollar-square.svg">
+                                                <p class="fs-6 text-capitalize"> last transaction amount</p>
+                                                <p class="fs-3 fw-bold text-capitalize"><span
+                                                        class="fs-6 text-uppercase fw-normal">bdt
+                                                    </span> 1,456.00</p>
+
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- ROW2 -->
+                                    <!-- CARD 1 -->
+
+                                    <div class="card col-lg-3 col-md-5 col-sm-5 cd-dash">
+                                        <a type="button" class="btn" href="#">
+                                            <div class="card-body">
+
+                                                <img class="m-2" src="../icon/card/document.svg">
+                                                <p class="fs-6 text-capitalize">last cheque no</p>
+                                                <p class="fs-3 fw-bold text-capitalize">1 jan 2018</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- CARD 2 -->
+                                    <div class="card col-lg-3 col-md-5 col-sm-5 cd-dash">
+
+                                        <!-- <button type="button"class="btn">
+                                            <img src="../icon/card/calendar.svg">
+                                        <h5>Last Transaction Date</h5>
+                                        <h2> 1 Jan 2018</h2>
+                                                </button> -->
+                                        <a type="button" class="btn" href="#">
+                                            <div class="card-body">
+
+                                                <img src="../icon/card/calendar.svg" class="m-2">
+                                                <p class="fs-6 text-capitalize">last cheque date</p>
+                                                <p class="fs-3 fw-bold text-capitalize">29 sep 2018</p>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- CARD3 -->
+                                    <div class="card col-lg-3 col-md-5 col-sm-5 cd-dash">
+
+                                        <a type="button" class="btn" href="#">
+                                            <div class="card-body">
+
+                                                <img class="m-2" src="../icon/card/dollar-square.svg">
+                                                <p class="fs-6 text-capitalize"> last cheque amount</p>
+                                                <p class="fs-3 fw-bold text-capitalize"><span
+                                                        class="fs-6 text-uppercase fw-normal">bdt
+                                                    </span> 1,456.00</p>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- ROW 3 -->
+                                    <!-- CARD 1 -->
+                                    <div class="card col-lg-3 col-md-5 col-sm-5 cd-dash">
+
+                                        <a type="button" class="btn" href="#">
+                                            <div class="card-body">
+
+                                                <img class="m-2" src="../icon/card/dollar-square.svg">
+                                                <p class="fs-6 text-capitalize"> last cheque amount</p>
+                                                <p class="fs-3 fw-bold text-capitalize"><span
+                                                        class="fs-6 text-uppercase fw-normal">bdt
+                                                    </span> 1,456.00</p>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" style="align-self:end;">
+                            <app-ad></app-ad>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="nav-tabContent">
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+<!-- Bootstrap JS -->
+<script src="../js/bootstrap.min.js"></script>
+<link href=" https://cdn.jsdelivr.net/npm/vuesax@3.12.2/dist/vuesax.min.css " rel="stylesheet">
+<script>
+    // Function to update the text box with the current time
+    function updateCurrentTime() {
+        var currentDate = new Date();
+        var hours = currentDate.getHours();
+        var minutes = currentDate.getMinutes();
+        var seconds = currentDate.getSeconds();
+        var formattedTime = padZero(hours) + ":" + padZero(minutes) + ":" + padZero(seconds);
+        document.getElementById("currentTime").innerHTML = formattedTime;
+    }
+
+    // Function to pad a single digit number with a leading zero
+    function padZero(number) {
+        return number < 10 ? "0" + number : number;
+    }
+
+    // Update the current time initially
+    updateCurrentTime();
+
+    // Update the current time every second (1000 milliseconds)
+    setInterval(updateCurrentTime, 1000);
+</script>
+<script src="../js/components.js"></script>
+
+</html>
