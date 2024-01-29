@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Banking Sign Up</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/rupali-logo.png" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/global.css" />
+    <!-- Virtual Keyboard -->
+    <link rel="stylesheet" href="../css/index-grassGreen.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
+</head>
+<body>
+    <!-- Login Container -->
+    <div class="container-fluid login-container">
+        <div class="row">
+            <!-- Picture -->
+            <div class="col-lg-6 col-md-6 image-container">
+                <div class="logo-container align-self-center">
+                    <img class="img-fluid" src="../img/rupali-logo.png" alt="Picture not Available" />
+                </div>
+                <div class="slogan-container">
+                    <nav style="--bs-breadcrumb-divider: '.'" aria-label="breadcrumb" class="m-3">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">Transfer</li>
+                            <li class="breadcrumb-item" aria-current="page">Payment</li>
+                            <li class="breadcrumb-item" aria-current="page">Manage</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="shortcut-links">
+                    <footer>
+                        <nav style="--bs-breadcrumb-divider: '.'" aria-label="breadcrumb" class="m-3">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item">
+                                    <a href="#" class="text-decoration-none">FAQs</a>
+                                </li>
+                                <li class="breadcrumb-item" aria-current="page">
+                                    <a href="#" class="text-decoration-none">Privacy Policy</a>
+                                </li>
+                                <li class="breadcrumb-item" aria-current="page">
+                                    <a href="#" class="text-decoration-none">Terms & Conditions</a>
+                                </li>
+                                <li class="breadcrumb-item" aria-current="page">
+                                    <a href="#" class="text-decoration-none">Contact Us</a>
+                                </li>
+                            </ol>
+                        </nav>
+                    </footer>
+                </div>
+            </div>
+            <!-- Login Form -->
+            <div class="col-lg-6 col-md-6 col-sm-12 login-form">
+                <!-- Select Language -->
+                <nav style="--bs-breadcrumb-divider: '.'" aria-label="breadcrumb" class="language-selection">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active">
+                            <a href="#" class="text-decoration-none">English</a>
+                        </li>
+                        <li class="breadcrumb-item" aria-current="page">
+                            <a href="#" class="text-decoration-none">বাংলা</a>
+                        </li>
+                    </ol>
+                </nav>
+                <!-- Logo for mobile view -->
+                <div class="logo-container text-center">
+                    <img class="img-fluid" src="../img/rupali-logo.png" alt="Picture not Available" />
+                </div>
+                <!-- Form -->
+                <div class="form">
+                    <form class="needs-validation" novalidate>
+                        <div class="text-center">
+                            <h3>SIGNUP</h3>
+                        </div>
+                        <div class="mb-3 floatingAccountNumber">
+                            <label for="floatingAccountNumber" class="form-label">Account Number</label>
+                            <input maxlength="14" type="text" class="form-control" id="validationCustom02"
+                            placeholder="Example: CB-30950100402" required>
+                        </div>
+                        <div class="important-notes mb-3">
+                            <label class="form-check-label" for="important-notes"  id="important-notes"><span id="note-heading">Note:</span><br>Use the account number which you want as the primary account</label>
+                        </div>
+                        <div class="text-center mb-3">
+                            <button class="button signIn" type="submit">Next&nbsp; &nbsp;<img src="../icon/right-arrow.svg" alt="arrow"></button>
+                        </div>
+                        <div class="text-center forget-account">
+                            <label>Already have an account?&nbsp; &nbsp;<span><a href="../index.html" class="text-decoration-none">Sign In</a></span></label>
+                        </div>
+                    </form>
+                </div>
+                <div class="text-center footer-container">
+                    <div>
+                        <span><p>All rights reserved. Copyright &copy; 2024, SIL V 1.0.0.0</p></span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Bootstrap JS -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Font Awesome JS -->
+<script src="../js/all.min.js"></script>
+<!-- jQuery -->
+<script src="../js/jquery-3.7.1.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<!-- External JavaScript -->
+<script src="../js/project.js"></script>
+<!-- Virtual Keyboard -->
+<script src="../js/index-main.js"></script>
+<script>
+    $(document).ready(function() {
+      // Make the div with id 'main' draggable
+      $('#main').draggable();
+    });
+    // keyboard
+    const keyboard = new aKeyboard.keyboard({
+      el: '#main',
+      style: {}, // additional styles
+      fixedBottomCenter: true
+    });
+    keyboard.inputOn('#floatingPassword', 'value');
+    keyboard.onclick('Enter', function(){
+        $('#main').hide();
+    });
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+</html>

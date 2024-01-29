@@ -1,0 +1,96 @@
+.akeyboard-keyboard {
+    height: 260px;
+    width: 750px;
+    /* background: #2E8B57; */
+    /* background: white; */
+    background: transparent;
+    backdrop-filter: blur(15px);
+    padding: 5px;
+    padding-top: 9px;
+    box-sizing: border-box;
+    border: 1px solid rgb(105, 103, 103);
+}
+
+.akeyboard-keyboard-innerKeys {
+    text-align: center;
+}
+
+.akeyboard-keyboard-keys {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background: white;
+    /* background: #2E8B57; */
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 4px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0px 5px 5px 1px rgba(18, 21, 18, 0.5);
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    border: none;
+}
+
+.akeyboard-keyboard-keys:hover {
+    background: rgb(194, 224, 194);
+    /* background: #2E8B57; */
+    color: black;
+    /* color: white; */
+}
+
+.akeyboard-keyboard-keys-Delete {
+    width: 80px;
+}
+
+.akeyboard-keyboard-keys-Tab {
+    width: 80px;
+}
+
+.akeyboard-keyboard-keys-Caps {
+    width: 77px;
+}
+
+.akeyboard-keyboard-keys-Enter {
+    width: 90px;
+}
+
+.akeyboard-keyboard-keys-Shift {
+    width: 106px;
+}
+
+.akeyboard-keyboard-keys-Space {
+    width: 350px;
+}
+
+.keyboard-keyboard-keys-focus {
+    background: #669933;
+    color: white;
+}
+
+.akeyboard-keyboard-fixedBottomCenter {
+    width: 48% !important;
+    position:fixed;
+    border-radius: 14px;
+}
+
+/*
+    number keyboard
+ */
+.akeyboard-numberKeyboard {
+    height: 260px;
+    width: 180px;
+    background: #003300;
+    border-radius: 5px;
+    padding: 5px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.akeyboard-numberKeyboard-keys-Enter {
+    height: 40px;
+    width: 100px;
+}
+
